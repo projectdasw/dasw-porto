@@ -916,7 +916,9 @@ body {
     .dasw-footer-social i:nth-child(1),
     .dasw-footer-social i:nth-child(2),
     .dasw-footer-social i:nth-child(3),
-    .dasw-footer-social i:nth-child(4) {
+    .dasw-footer-social i:nth-child(4),
+    .dasw-footer-social i:nth-child(5),
+    .dasw-footer-social i:nth-child(6) {
         color: #fff;
     }
 
