@@ -28,6 +28,14 @@ body {
     z-index: 1;
 }
 
+.dasw-nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+}
+
 .dasw-topnav {
     display: flex;
     flex-direction: row;
@@ -47,15 +55,15 @@ body {
 }
 
 .dasw-topnav a:nth-child(1) i {
-    color: #0e76a8;
-}
-
-.dasw-topnav a:nth-child(2) i {
     color: #3b5998;
 }
 
-.dasw-topnav a:nth-child(3) i {
+.dasw-topnav a:nth-child(2) i {
     color: #00acee;
+}
+
+.dasw-topnav a:nth-child(3) i {
+    color: #db4a39;
 }
 
 .dasw-topnav a:nth-child(4) i {
@@ -63,6 +71,14 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.dasw-topnav a:nth-child(5) i {
+    color: #0e76a8;
+}
+
+.dasw-topnav a:nth-child(6) i {
+    color: #171515;
 }
 
 .dasw-logo {
@@ -1060,6 +1076,7 @@ body {
 
     .dasw-topnav {
         background-color: #000;
+        justify-content: center;
     }
 
     .dasw-topnav a i {
@@ -1078,7 +1095,9 @@ body {
     .dasw-topnav a:nth-child(1) i,
     .dasw-topnav a:nth-child(2) i,
     .dasw-topnav a:nth-child(3) i,
-    .dasw-topnav a:nth-child(4) i {
+    .dasw-topnav a:nth-child(4) i,
+    .dasw-topnav a:nth-child(5) i,
+    .dasw-topnav a:nth-child(6) i {
         color: rgb(255, 255, 255);
     }
 
@@ -1093,14 +1112,6 @@ body {
 
     #arrow-transform:checked~label #arrow-trans {
         transform: rotate(180deg);
-    }
-
-    .dasw-nav-sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        padding: 0;
-        background-color: #fff;
     }
 
     .dasw-features-content {
