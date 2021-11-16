@@ -1,0 +1,1201 @@
+@charset "utf-8";
+
+html {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* DASW INDEX HTML */
+/* -------------------------------------------------- */
+.dasw-header {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.dasw-nav {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dasw-topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #E4F1FE;
+}
+
+.dasw-topnav a {
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+}
+
+.dasw-topnav a:nth-child(1) i {
+    color: #0e76a8;
+}
+
+.dasw-topnav a:nth-child(2) i {
+    color: #3b5998;
+}
+
+.dasw-topnav a:nth-child(3) i {
+    color: #00acee;
+}
+
+.dasw-topnav a:nth-child(4) i {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.dasw-logo {
+    display: flex;
+    width: 50%;
+}
+
+.dasw-logo img {
+    width: 15%;
+    justify-content: flex-start;
+}
+
+.dasw-menunav {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dasw-menunav a {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid black;
+}
+
+.dasw-img-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background-image: url("../img/header-bg.jpg");
+    background-size: cover;
+}
+
+.dasw-img-header img:nth-child(1) {
+    width: 40%;
+}
+
+.dasw-img-header img:nth-child(2) {
+    width: 50%;
+    height: 30%;
+}
+
+.dasw-features {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 15px;
+    background: rgb(232, 96, 71);
+    background: -moz-linear-gradient(321deg, rgba(232, 96, 71, 1) 25%, rgba(223, 150, 72, 1) 50%, rgba(42, 156, 160, 1) 75%, rgba(63, 234, 186, 1) 100%);
+    background: -webkit-linear-gradient(321deg, rgba(232, 96, 71, 1) 25%, rgba(223, 150, 72, 1) 50%, rgba(42, 156, 160, 1) 75%, rgba(63, 234, 186, 1) 100%);
+    background: linear-gradient(321deg, rgba(232, 96, 71, 1) 25%, rgba(223, 150, 72, 1) 50%, rgba(42, 156, 160, 1) 75%, rgba(63, 234, 186, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e86047", endColorstr="#3feaba", GradientType=1);
+}
+
+.dasw-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dasw-main-features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dasw-features-heading,
+.dasw-project-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.dasw-features-heading h1 {
+    margin: 0;
+    font-size: 60px;
+    color: #fff;
+}
+
+.dasw-features-heading span {
+    color: #fff;
+    font-size: 25px;
+}
+
+.dasw-features-content {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.dasw-features-content:nth-child(1) img {
+    width: 65%;
+}
+
+.dasw-features-content img {
+    width: 50%;
+    position: relative;
+    animation-name: dasw-FeatImgAni;
+    animation-duration: 2s;
+    /* animation-timing-function: linear; */
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.dasw-features-text {
+    text-align: center;
+}
+
+.dasw-project-heading h1 {
+    background-image: linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 30px 0 10px 0;
+    font-size: 60px;
+}
+
+.dasw-main-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    background: transparent;
+    background: -moz-linear-gradient(327deg, rgba(0, 0, 0, 0.9527408375459558) 0%, rgba(67, 67, 67, 0.8883150672378326) 70%);
+    background: -webkit-linear-gradient(327deg, rgba(0, 0, 0, 0.9527408375459558) 0%, rgba(67, 67, 67, 0.8883150672378326) 70%);
+    background: linear-gradient(327deg, rgba(0, 0, 0, 0.9527408375459558) 0%, rgba(67, 67, 67, 0.8883150672378326) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#434343", GradientType=1);
+}
+
+.dasw-project-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    /* padding: 10px; */
+}
+
+.dasw-project-img {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+.dasw-project-img img {
+    width: 60%;
+}
+
+.dasw-project-text {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    /* border: 1px solid black; */
+    padding: 20px;
+    color: #fff;
+}
+
+.dasw-project-text img {
+    width: 100%;
+}
+
+.dasw-project-text h2 {
+    margin: 0 0 3px 0;
+    font-size: 60px;
+    text-align: center;
+}
+
+.dasw-project-text span {
+    font-size: 20px;
+    text-align: center;
+}
+
+.dasw-project-button {
+    text-decoration: none;
+    border: 1px solid #00F260;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(to right, #0575E6, #00F260);
+    transition: ease-out 0.3s;
+}
+
+.dasw-project-button:hover {
+    box-shadow: inset -50px 0 0 0 #0a6849;
+}
+
+.dasw-bg-img {
+    background-image: url("../img/logo/dasw-webbanner.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.dasw-project-content:nth-child(2) .dasw-project-text {
+    order: 1;
+}
+
+.dasw-project-content:nth-child(2) .dasw-project-img {
+    order: 2;
+}
+
+.dasw-about {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-image: url("../img/about-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.dasw-about-shape {
+    display: none;
+}
+
+.dasw-about-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.dasw-about-heading h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.dasw-about-img {
+    display: flex;
+    width: 40%;
+    order: 2;
+}
+
+.dasw-about-img img {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 30px 0 0 0;
+
+}
+
+.dasw-about-text {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 20%;
+    text-align: justify;
+    padding: 10px;
+    order: 1;
+}
+
+.dasw-about-text img {
+    width: 70%;
+    margin: 0 auto
+}
+
+.dasw-about-text p {
+    margin: 0;
+    font-size: 25px;
+}
+
+.dasw-about-text p {
+    margin: 10px 0 0 0;
+}
+
+.dasw-about-text h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.dasw-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.dasw-contact-heading {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.dasw-contact-heading h1 {
+    font-size: 60px;
+    margin: 30px 0 10px 0;
+    color: #fff;
+}
+
+.dasw-contact-content {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.dasw-contact-img {
+    display: flex;
+    width: 40%;
+    /* border: 1px solid black; */
+}
+
+.dasw-contact-img img {
+    width: 100%;
+}
+
+.dasw-contact-text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.dasw-contact-text h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.dasw-contact-text a {
+    padding: 10px;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    transition: .5s ease-out;
+}
+
+.dasw-contact-text a i {
+    transition: .4s ease-in;
+}
+
+.dasw-contact-text a:nth-last-child(2) {
+    background-color: #c6211f;
+}
+
+.dasw-contact-text a:nth-last-child(1) {
+    background-color: #25d366;
+}
+
+.dasw-contact-text a:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.dasw-contact-text a:hover i {
+    transform: rotate(360deg);
+}
+
+.dasw-footer {
+    display: flex;
+    max-width: 100%;
+    background-image: url("../img/footer-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dasw-footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.dasw-footer-content img {
+    width: 30%;
+    margin: 10px 0;
+}
+
+.dasw-footer-content p {
+    text-align: center;
+    margin: 0;
+    width: 45%;
+}
+
+.dasw-footer-evenly {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.dasw-footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 15%;
+    padding: 10px;
+}
+
+.dasw-footer-social i {
+    margin: 0 5px;
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+}
+
+.dasw-footer-social i:nth-child(1) {
+    color: #0e76a8;
+}
+
+.dasw-footer-social i:nth-child(2) {
+    color: #3b5998;
+}
+
+.dasw-footer-social i:nth-child(3) {
+    color: #00acee;
+}
+
+.dasw-footer-social i:nth-child(4) {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.dasw-copyright {
+    display: flex;
+    margin: 30px 0;
+}
+
+/* -------------------------------------------------- */
+
+/* DASW PROJECT HTML */
+/* -------------------------------------------------- */
+.dasw-header-project {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.dasw-prj-content{
+    
+}
+
+/* -------------------------------------------------- */
+
+/* DASW ANIMATION */
+/* -------------------------------------------------- */
+
+.dasw-zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.dasw-GradientAni {
+    background: linear-gradient(244deg, #32c8a1, #2a7276, #3944d9);
+    background-size: 600% 600%;
+    -webkit-animation: GradientAni 5s ease infinite;
+    -moz-animation: GradientAni 5s ease infinite;
+    -o-animation: GradientAni 5s ease infinite;
+    animation: GradientAni 5s ease infinite;
+}
+
+@-webkit-keyframes GradientAni {
+    0% {
+        background-position: 0% 61%
+    }
+
+    50% {
+        background-position: 100% 40%
+    }
+
+    100% {
+        background-position: 0% 61%
+    }
+}
+
+@-moz-keyframes GradientAni {
+    0% {
+        background-position: 0% 61%
+    }
+
+    50% {
+        background-position: 100% 40%
+    }
+
+    100% {
+        background-position: 0% 61%
+    }
+}
+
+@-o-keyframes GradientAni {
+    0% {
+        background-position: 0% 61%
+    }
+
+    50% {
+        background-position: 100% 40%
+    }
+
+    100% {
+        background-position: 0% 61%
+    }
+}
+
+@keyframes GradientAni {
+    0% {
+        background-position: 0% 61%
+    }
+
+    50% {
+        background-position: 100% 40%
+    }
+
+    100% {
+        background-position: 0% 61%
+    }
+}
+
+.dasw-GradientContact {
+    background: linear-gradient(46deg, #26415d, #ff6a50, #5e40d9, #b1c7df);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 14s ease infinite;
+    -moz-animation: AnimationName 14s ease infinite;
+    -o-animation: AnimationName 14s ease infinite;
+    animation: AnimationName 14s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 92%
+    }
+
+    50% {
+        background-position: 100% 9%
+    }
+
+    100% {
+        background-position: 0% 92%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 92%
+    }
+
+    50% {
+        background-position: 100% 9%
+    }
+
+    100% {
+        background-position: 0% 92%
+    }
+}
+
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 0% 92%
+    }
+
+    50% {
+        background-position: 100% 9%
+    }
+
+    100% {
+        background-position: 0% 92%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 92%
+    }
+
+    50% {
+        background-position: 100% 9%
+    }
+
+    100% {
+        background-position: 0% 92%
+    }
+}
+
+@-webkit-keyframes animate-opennav {
+    from {
+        right: -1000px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animate-opennav {
+    from {
+        right: -1000px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes animate-closenav {
+    from {
+        right: 0;
+        opacity: 0
+    }
+
+    to {
+        right: -1000px;
+        opacity: 1
+    }
+}
+
+@keyframes animate-closenav {
+    from {
+        right: 0;
+        opacity: 0
+    }
+
+    to {
+        right: -1000px;
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes dasw-FeatImgAni {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-50px);
+    }
+
+    50% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+
+    57% {
+        transform: scale(1, 1) translateY(-7px);
+    }
+
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@keyframes dasw-FeatImgAni {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-50px);
+    }
+
+    50% {
+        transform: scale(1.05, .95) translateY(0);
+    }
+
+    57% {
+        transform: scale(1, 1) translateY(-7px);
+    }
+
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+/* -------------------------------------------------- */
+/* DASW RESPONSIVE BREAKDOWN */
+/* -------------------------------------------------- */
+@media screen and (max-width: 1920px) {}
+
+@media screen and (max-width: 1600px) {
+    .dasw-about-img {
+        width: 50%;
+    }
+
+    .dasw-about-text {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .dasw-about-img {
+        width: 50%;
+    }
+
+    .dasw-about-text {
+        width: 30%;
+    }
+
+    .dasw-contact-img {
+        width: 40%
+    }
+
+    .dasw-contact-text {
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 1366px) {}
+
+@media screen and (max-width: 1024px) {
+    .dasw-logo {
+        width: 30%;
+    }
+
+    .dasw-logo img {
+        width: 30%;
+    }
+
+    .dasw-menunav {
+        width: 70%;
+    }
+
+    .dasw-about-text p {
+        font-size: 18px;
+    }
+
+    .dasw-about-shape img {
+        width: 40%;
+        float: left
+    }
+
+    .dasw-footer {
+        background-image: url("../img/footer-bg-1024.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .dasw-footer-content {
+        background-color: rgba(9, 97, 155, 0.5);
+        color: #fff;
+    }
+
+    .dasw-footer-social i:nth-child(1),
+    .dasw-footer-social i:nth-child(2),
+    .dasw-footer-social i:nth-child(3),
+    .dasw-footer-social i:nth-child(4) {
+        color: #fff;
+    }
+
+    .dasw-footer-evenly {
+        width: 70%;
+    }
+
+    .dasw-contact-img {
+        width: 60%;
+    }
+
+    .dasw-contact-text {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dasw-menunav {
+        width: 90%;
+    }
+
+    .dasw-logo {
+        width: 10%;
+    }
+
+    .dasw-logo img {
+        width: 100%;
+    }
+
+    .dasw-features-content {
+        margin: 0 5px;
+    }
+
+    .dasw-project-content img {
+        width: 90%;
+    }
+
+    .dasw-about {
+        padding: 0 10px;
+    }
+
+    .dasw-about-content {
+        flex-direction: column;
+    }
+
+    .dasw-about-text {
+        width: 100%;
+    }
+
+    .dasw-about-img {
+        width: 100%;
+    }
+
+    .dasw-contact-img {
+        display: none;
+    }
+
+    .dasw-contact-text {
+        width: 100%;
+        background-image: url("../img/contact-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        align-items: center;
+    }
+
+    .dasw-contact-text h2 {
+        background-color: rgba(110, 110, 110, 0.8);
+        width: 60%;
+        padding: 10px;
+    }
+
+    .dasw-footer-content img,
+    .dasw-footer-content p {
+        width: 60%;
+    }
+
+    .dasw-footer-evenly {
+        width: 80%;
+    }
+
+    /* .dasw-about-shape {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dasw-about-shape-content {
+        display: block;
+    }
+
+    .dasw-about-shape img {
+        width: 30%;
+    } */
+}
+
+@media screen and (max-width: 480px) {
+    .dasw-project-text h2 {
+        font-size: 40px;
+    }
+
+    .hidden-text {
+        display: none;
+    }
+
+    .dasw-topnav a {
+        font-size: 30px;
+    }
+
+    .small-text {
+        display: none;
+    }
+
+    .dasw-features-content {
+        width: 40%;
+        margin: 5px;
+    }
+
+    .dasw-nav-sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .dasw-contact-text h2 {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .dasw-project-content {
+        flex-direction: column;
+    }
+
+    .dasw-project-text h2 {
+        font-size: 30px;
+    }
+
+    .dasw-topnav {
+        background-color: #000;
+    }
+
+    .dasw-topnav a i {
+        font-size: 30px;
+    }
+
+    .hidden-text {
+        display: none;
+    }
+
+    .small-text {
+        /* font-size: 10px; */
+        display: none;
+    }
+
+    .dasw-topnav a:nth-child(1) i,
+    .dasw-topnav a:nth-child(2) i,
+    .dasw-topnav a:nth-child(3) i,
+    .dasw-topnav a:nth-child(4) i {
+        color: rgb(255, 255, 255);
+    }
+
+    .dasw-logo {
+        width: 20%;
+        padding: 10px;
+    }
+
+    #arrow-trans {
+        transition: 0.8s ease-out;
+    }
+
+    #arrow-transform:checked~label #arrow-trans {
+        transform: rotate(180deg);
+    }
+
+    .dasw-nav-sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .dasw-features-content {
+        width: 40%;
+        margin: 5px;
+    }
+
+    .dasw-features-content img,
+    .dasw-features-content:nth-child(1) img {
+        width: 100%;
+    }
+
+    .dasw-features-heading h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .dasw-project-content {
+        padding: 20px 0 0 0;
+    }
+
+    .dasw-project-img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .dasw-project-text {
+        width: 100%;
+        padding: 20px 0 0 0;
+    }
+
+    .dasw-project-content:nth-child(2) .dasw-project-img {
+        order: 1;
+    }
+
+    .dasw-project-content:nth-child(2) .dasw-project-text {
+        order: 2;
+    }
+
+    .dasw-contact-heading h1 {
+        font-size: 40px;
+    }
+
+    .dasw-contact-text h2 {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 25px;
+    }
+
+    .dasw-footer-content img {
+        width: 100%;
+    }
+
+    .dasw-footer-content p {
+        width: 100%;
+    }
+
+    .dasw-footer-evenly {
+        width: 100%;
+    }
+
+    .dasw-img-header {
+        flex-direction: column;
+    }
+
+    .dasw-img-header img:nth-child(1) {
+        order: 2;
+        width: 100%;
+    }
+
+    .dasw-img-header img:nth-child(2) {
+        order: 1;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 320px) {
+    .dasw-logo {
+        width: 20%;
+        justify-content: flex-end;
+    }
+
+    .dasw-menunav {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    .dasw-menunav a {
+        font-size: 15px;
+    }
+
+    .dasw-features-content {
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+
+    .dasw-footer-evenly {
+        flex-wrap: wrap;
+    }
+
+    .dasw-footer-evenly strong {
+        margin: 10px 0 0 0;
+    }
+}
+
+/* -------------------------------------------------- */
