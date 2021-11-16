@@ -512,6 +512,14 @@ body {
     color: transparent;
 }
 
+.dasw-footer-social i:nth-child(5) {
+    color: #0e76a8;
+}
+
+.dasw-footer-social i:nth-child(6) {
+    color: #171515;
+}
+
 .dasw-copyright {
     display: flex;
     margin: 30px 0;
