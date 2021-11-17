@@ -66,7 +66,12 @@
             <div class="dasw-logo">
                 <img src="assets/img/logo/dasw-logo.png" alt="dasw-logo">
             </div>
-            <div class="dasw-menunav">
+            <div class="dasw-bars">
+                <a id="dasw-toggle-bars" onclick="dasw_nav()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <div class="dasw-menunav" id="nav-menu">
                 <a href="">
                     <i class="fas fa-home"></i>
                     <span class="small-text">Home</span>
@@ -225,13 +230,13 @@
             </div>
         </div>
     </section>
-    <section class="dasw-contact dasw-GradientContact">
+    <section class="dasw-contact">
         <div class="dasw-contact-heading">
             <h1>Contact Me</h1>
         </div>
         <div class="dasw-contact-content">
             <div class="dasw-contact-img">
-                <img src="assets/img/contact-bg.jpg" alt="contact-bg">
+                <img src="assets/img/contact-img.jpg" alt="contact-img">
             </div>
             <div class="dasw-contact-text">
                 <h2>Have question or comments?<br /> Bussiness?</h2>
@@ -274,24 +279,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        window.onscroll = function () {
-            myFunction()
-        };
-
-        var navbar = document.getElementById("nav");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("dasw-nav-sticky");
-                navbar.classList.add("fadeIn");
-            } else {
-                navbar.classList.remove("dasw-nav-sticky");
-                navbar.classList.remove("fadeIn");
-            }
-        }
-    </script>
+    <script src="assets/js/dasw-javascript.js"></script>
 </body>
 
 </html>
