@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     z-index: 1;
 }
 
@@ -84,6 +84,7 @@ body {
 .dasw-logo {
     display: flex;
     width: 50%;
+    padding: 10px;
 }
 
 .dasw-logo img {
@@ -97,6 +98,7 @@ body {
     width: 50%;
     justify-content: flex-end;
     align-items: center;
+    padding: 10px;
 }
 
 .dasw-menunav a {
@@ -106,6 +108,10 @@ body {
     text-decoration: none;
     color: #000;
     border: 1px solid black;
+}
+
+.dasw-bars {
+    display: none;
 }
 
 .dasw-img-header {
@@ -377,6 +383,9 @@ body {
     flex-direction: column;
     max-width: 100%;
     justify-content: center;
+    background-image: url("../img/contact-bg.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .dasw-contact-heading {
@@ -943,11 +952,11 @@ body {
     }
 
     .dasw-contact-img {
-        width: 60%;
+        width: 50%;
     }
 
     .dasw-contact-text {
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -994,7 +1003,7 @@ body {
 
     .dasw-contact-text {
         width: 100%;
-        background-image: url("../img/contact-bg.jpg");
+        background-image: url("../img/contact-img.jpg");
         background-position: center;
         background-size: cover;
         align-items: center;
@@ -1038,12 +1047,36 @@ body {
         display: none;
     }
 
+    .dasw-menunav {
+        display: none;
+    }
+
+    .dasw-menunav-bars{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        align-items: flex-start;
+    }
+
+    .dasw-bars {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #dasw-toggle-bars {
+        font-size: 30px;
+    }
+
     .dasw-topnav a {
         font-size: 30px;
     }
 
     .small-text {
-        display: none;
+        display: flex;
     }
 
     .dasw-features-content {
@@ -1161,6 +1194,11 @@ body {
         font-size: 25px;
     }
 
+    .dasw-contact-text a {
+        width: 80%;
+        font-size: 30px;
+    }
+
     .dasw-footer-content img {
         width: 100%;
     }
@@ -1188,7 +1226,11 @@ body {
     }
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+    .dasw-contact-text a {
+        font-size: 25px;
+    }
+}
 
 @media screen and (max-width: 320px) {
     .dasw-logo {
@@ -1216,6 +1258,14 @@ body {
 
     .dasw-footer-evenly strong {
         margin: 10px 0 0 0;
+    }
+
+    .dasw-contact-text a {
+        font-size: 20px;
+    }
+
+    .dasw-contact-text h2 {
+        font-size: 20px;
     }
 }
 
