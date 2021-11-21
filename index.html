@@ -30,10 +30,18 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Dimas Agil Satrio Wibowo</title>
 </head>
 
 <body>
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="btt-btn" title="Back To Top">
+        <i class="fas fa-hand-point-up"></i>
+        <span>TOP</span>
+    </button>
+    <!-- End of Back To Top Button -->
+
     <!-- HEADER SECTION -->
     <header class="dasw-header">
         <div class="dasw-topnav">
@@ -64,29 +72,32 @@
         </div>
         <nav class="dasw-nav" id="nav">
             <div class="dasw-logo">
-                <img src="assets/img/logo/dasw-logo.png" alt="dasw-logo">
-            </div>
-            <div class="dasw-bars">
-                <a id="dasw-toggle-bars" onclick="dasw_nav()">
-                    <i class="fas fa-bars"></i>
-                </a>
+                <img src="assets/img/logo/dasw-brandname.png" alt="dasw-brandname">
+                <div class="dasw-bars-btn">
+                    <a id="dasw-open-bars" onclick="dasw_opennav()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <a id="dasw-close-bars" onclick="dasw_closenav()">
+                        <i class="fas fa-times"></i>
+                    </a>
+                </div>
             </div>
             <div class="dasw-menunav" id="nav-menu">
                 <a href="">
                     <i class="fas fa-home"></i>
-                    <span class="small-text">Home</span>
+                    Home
                 </a>
                 <a href="">
                     <i class="fas fa-project-diagram"></i>
-                    <span class="small-text">Project</span>
+                    Project
                 </a>
                 <a href="">
                     <i class="fas fa-id-badge"></i>
-                    <span class="small-text">About Me</span>
+                    About Me
                 </a>
                 <a href="">
                     <i class="fas fa-address-card"></i>
-                    <span class="small-text">Contact</span>
+                    Contact
                 </a>
             </div>
         </nav>
@@ -136,7 +147,7 @@
         </div>
         <div class="dasw-bg-img">
             <div class="dasw-main-project">
-                <div class="dasw-project-content">
+                <div class="dasw-project-content" data-aos="fade-right">
                     <div class="dasw-project-img">
                         <img src="assets/img/logo/dasw-codebox.png" alt="dasw-codebox">
                     </div>
@@ -148,7 +159,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="dasw-project-content">
+                <div class="dasw-project-content" data-aos="fade-left">
                     <div class="dasw-project-img">
                         <img src="assets/img/logo/dasw-desktop.png" alt="dasw-desktop">
                     </div>
@@ -160,7 +171,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="dasw-project-content">
+                <div class="dasw-project-content" data-aos="fade-right">
                     <div class="dasw-project-img">
                         <img src="assets/img/logo/dasw-abstract.png" alt="dasw-abstract">
                     </div>
@@ -181,36 +192,10 @@
         </div>
         <div class="dasw-about-content">
             <div class="dasw-about-img">
-                <img src="assets/img/photo-cartoonizer.png" alt="photo-cartoonizer">
+                <img src="assets/img/photo-cartoonizer.png" alt="photo-cartoonizer" data-aos="fade-left">
             </div>
-            <div class="dasw-about-text">
+            <div class="dasw-about-text" data-aos="fade-right">
                 <!-- <img src="assets/img/logo/dasw-webbanner.png" alt="dasw-webbanner"> -->
-                <h1>Hi, I'am Dimas</h1>
-                <p>
-                    I'am a Website Developer and Graphic Designer
-                    who was born in Indonesia. I currently live in
-                    Malang, famously called the city of Education.
-                </p>
-                <p>
-                    I love hiking, travel to a place where I can feel peace,
-                    imagination, relax and something can make me create as
-                    many ideas as possible.
-                </p>
-                <p>
-                    When I'am not write code or designing, you can find me
-                    watching YouTube, gaming, read memes for funny, playing guitar,
-                    filling up with coffe and smoke at coffeshop or home.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="dasw-about-shape">
-        <div class="dasw-about-shape-heading">
-            <h1>About Me</h1>
-        </div>
-        <div class="dasw-about-shape-content">
-            <img src="assets/img/photo-cartoonizer.png" alt="photo-cartoonizer">
-            <div class="dasw-about-shape-text">
                 <h1>Hi, I'am Dimas</h1>
                 <p>
                     I'am a Website Developer and Graphic Designer
@@ -252,7 +237,7 @@
         </div>
     </section>
     <footer class="dasw-footer">
-        <div class="dasw-footer-content">
+        <div class="dasw-footer-content" data-aos="zoom-in">
             <img src="assets/img/logo/dasw-webbanner.png" alt="dasw-webbanner">
             <p>
                 DimasAgil_SW is a container of my project and also a Personal Brand.
@@ -280,6 +265,10 @@
         </div>
     </footer>
     <script src="assets/js/dasw-javascript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
