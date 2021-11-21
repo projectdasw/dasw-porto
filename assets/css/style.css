@@ -62,6 +62,7 @@ body {
     max-width: 100%;
     /* padding: 10px; */
     z-index: 1;
+    background-color: rgb(255, 255, 255);
 }
 
 .dasw-nav-sticky {
@@ -345,6 +346,7 @@ body {
     padding: 10px;
     font-size: 20px;
     color: #fff;
+    cursor: pointer;
     background: linear-gradient(to right, #0575E6, #00F260);
     transition: ease-out 0.3s;
 }
@@ -610,15 +612,26 @@ body {
 
 /* DASW PROJECT HTML */
 /* -------------------------------------------------- */
-.dasw-header-project {
+.dasw-code-bg {
     display: flex;
-    flex-direction: column;
-    max-width: 100%;
+    z-index: -2;
 }
 
-/* .dasw-prj-content{
-    
-} */
+.dasw-code-bg video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.dasw-code-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
 
 /* -------------------------------------------------- */
 
