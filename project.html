@@ -42,8 +42,8 @@
     <!-- End of Back To Top Button -->
 
     <!-- HEADER SECTION -->
-    <header class="dasw-header">
-        <div class="dasw-topnav" data-aos="fade-down">
+    <header class="dasw-prj-header">
+        <div class="dasw-prj-topnav">
             <a href="">
                 <i class="fab fa-facebook"></i>
                 <span class="hidden-text">Facebook</span>
@@ -69,19 +69,11 @@
                 <span class="hidden-text">GitHub</span>
             </a>
         </div>
-        <nav class="dasw-nav" id="nav">
-            <div class="dasw-logo">
+        <nav class="dasw-prj-nav">
+            <div class="dasw-prj-logo">
                 <img src="assets/img/logo/dasw-brandname.png" alt="dasw-brandname">
-                <div class="dasw-bars-btn">
-                    <a id="dasw-open-bars" onclick="dasw_opennav()">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                    <a id="dasw-close-bars" onclick="dasw_closenav()">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </div>
             </div>
-            <div class="dasw-menunav" id="nav-menu">
+            <div class="dasw-prj-menunav">
                 <a href="">
                     <i class="fas fa-home"></i>
                     Home
@@ -108,7 +100,39 @@
             <source src="assets/img/code-bg.mp4" type="video/mp4">
         </video>
     </section>
-    <script src="assets/js/dasw-javascript.js"></script>
+    <section class="dasw-prj" id="daswprj-collapse">
+        <div class="dasw-main-prj">
+            <div class="dasw-prj-content">
+                <img src="assets/img/logo/dasw-code.png" alt="dasw-code">
+                <div class="dasw-prj-text">
+                    <h1>Web Development</h1>
+                </div>
+            </div>
+            <div class="dasw-prj-content">
+                <img src="assets/img/logo/dasw-vs.png" alt="dasw-vs">
+                <div class="dasw-prj-text">
+                    <h1>Desktop Apps Development</h1>
+                </div>
+            </div>
+            <div class="dasw-prj-content">
+                <img src="assets/img/logo/dasw-office.png" alt="dasw-office">
+                <div class="dasw-prj-text">
+                    <h1>Microsoft Office based Application</h1>
+                </div>
+            </div>
+            <div class="dasw-prj-content">
+                <img src="assets/img/logo/dasw-design.png" alt="dasw-design">
+                <div class="dasw-prj-text">
+                    <h1>Graphic Design</h1>
+                </div>
+            </div>
+            <a class="dasw-collapse" onclick="dasw_prj_collapse()">
+                <i class="fas fa-angle-double-right"></i>
+                <span>Collapse</span>
+            </a>
+        </div>
+    </section>
+    <script src="assets/js/dasw-project.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
