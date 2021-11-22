@@ -1,8 +1,12 @@
 @charset "utf-8";
 
+* {
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
 html {
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: "smooth";
 
 }
@@ -42,8 +46,6 @@ body {
 #btt-btn span {
     font-size: 25px;
     margin: 10px 0 0 0;
-    font-family: 'Josefin Sans',
-        sans-serif;
 }
 
 /* -------------------------------------------------- */
@@ -612,6 +614,112 @@ body {
 
 /* DASW PROJECT HTML */
 /* -------------------------------------------------- */
+
+.dasw-prj-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+}
+
+.dasw-prj-nav {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    /* padding: 10px; */
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+}
+
+.dasw-prj-topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #E4F1FE;
+}
+
+.dasw-prj-topnav a {
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #000;
+}
+
+.dasw-prj-topnav a:nth-child(1) i {
+    color: #3b5998;
+}
+
+.dasw-prj-topnav a:nth-child(2) i {
+    color: #00acee;
+}
+
+.dasw-prj-topnav a:nth-child(3) i {
+    color: #db4a39;
+}
+
+.dasw-prj-topnav a:nth-child(4) i {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.dasw-prj-topnav a:nth-child(5) i {
+    color: #0e76a8;
+}
+
+.dasw-prj-topnav a:nth-child(6) i {
+    color: #171515;
+}
+
+.dasw-prj-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+}
+
+.dasw-prj-logo img {
+    width: 40%;
+    justify-content: flex-start;
+}
+
+
+.dasw-prj-menunav {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.dasw-prj-menunav a {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+    background: linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 100% 0,
+        linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 0 0,
+        linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 0 100%,
+        linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 100% 100%;
+    background-size: var(--d, 0) 3px,
+        3px var(--d, 0);
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.dasw-prj-menunav a:hover {
+    --d: 100%;
+}
+
 .dasw-code-bg {
     display: flex;
     z-index: -2;
@@ -633,6 +741,65 @@ body {
     z-index: -1;
 }
 
+.dasw-prj {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(56, 54, 54);
+    z-index: -1;
+    transition: 0.5s ease;
+    transition-property: width;
+}
+
+.dasw-main-prj {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin: 180px 0 0 0;
+}
+
+.dasw-prj-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dasw-prj-content img {
+    width: 20%;
+}
+
+.dasw-prj-text {
+    width: 60%;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.dasw-prj-text h1 {
+    margin: 0;
+}
+
+.dasw-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dasw-collapse span {
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.dasw-collapse i {
+    font-size: 50px;
+    transition: 0.5s ease;
+}
 /* -------------------------------------------------- */
 
 /* DASW ANIMATION */
