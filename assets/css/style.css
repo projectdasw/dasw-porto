@@ -48,10 +48,107 @@ body {
     margin: 10px 0 0 0;
 }
 
+#btt-prj-btn {
+    display: none;
+    /* display: flex; */
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 150px;
+    right: 4px;
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px;
+}
+#btt-about-btn {
+    display: none;
+    /* display: flex; */
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: rgb(170 38 32);
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#btt-about-btn i {
+    font-size: 60px;
+}
+
+#btt-about-btn span {
+    font-size: 25px;
+    margin: 10px 0 0 0;
+}
+
+#btt-back-home {
+    display: none;
+    /* display: flex; */
+    width: 15%;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+#btt-back-home i {
+    font-size: 60px;
+    margin: 0 10px 0 0;
+}
+
+#btt-back-home span {
+    font-size: 25px;
+}
+
+
 /* -------------------------------------------------- */
 
 /* DASW INDEX HTML */
 /* -------------------------------------------------- */
+.loading{
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    background-color: #fff;
+}
+.loading img{
+    width: 30%;
+    height: auto;
+    animation: scaleAnimation 3s infinite;
+}
+.loading span{
+    font-size: 40px;
+}
+
 .dasw-header {
     display: flex;
     flex-direction: column;
@@ -619,7 +716,10 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .dasw-prj-nav {
@@ -690,6 +790,10 @@ body {
     justify-content: flex-start;
 }
 
+.dasw-prj-bars-btn {
+    display: none;
+}
+
 
 .dasw-prj-menunav {
     display: flex;
@@ -722,7 +826,7 @@ body {
 
 .dasw-code-bg {
     display: flex;
-    z-index: -2;
+    z-index: -1;
 }
 
 .dasw-code-bg video {
@@ -733,34 +837,213 @@ body {
     top: 0;
 }
 
-.dasw-code-overlay {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-}
-
 .dasw-prj {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    width: 30%;
+    width: 100%;
     height: 100%;
-    background-color: rgb(56, 54, 54);
-    z-index: -1;
-    transition: 0.5s ease;
-    transition-property: width;
 }
 
 .dasw-main-prj {
     display: flex;
+    width: 100%;
+}
+
+.dasw-code-prj-content {
+    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    width: 100%;
+    height: max-content;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.dasw-code-prj-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.dasw-code-prj-img img {
+    width: 20%;
+}
+
+.dasw-code-prj-img span {
+    font-size: 60px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.dasw-code-prj-projectlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+    height: auto;
+}
+
+.dasw-prj-img {
+    position: relative;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.dasw-text-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.dasw-text-overlay h1 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+}
+
+.dasw-text-overlay span {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.dasw-text-overlay button {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.dasw-text-overlay button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.dasw-prj-img:hover .dasw-text-overlay {
+    height: 100%;
+}
+
+.dasw-prj-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.dasw-text-prj-info {
+    display: none;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.dasw-text-prj-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 90%;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 30px;
+}
+
+.dasw-text-prj-info:nth-child(1) .dasw-text-prj-content button {
+    background-color: #fe681c;
+}
+
+.dasw-text-prj-info:nth-child(2) .dasw-text-prj-content button {
+    background-color: #008037;
+}
+
+.dasw-text-prj-info:nth-child(3) .dasw-text-prj-content button {
+    background-color: #d83a5e;
+}
+
+.dasw-text-prj-info:nth-child(4) .dasw-text-prj-content button {
+    background-color: #58381c;
+}
+
+.dasw-text-prj-content img {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.dasw-heading-close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dasw-heading-close button {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    padding: 20px 30px;
+    font-size: 30px;
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.dasw-heading-close:nth-child(1) button {
+    background-color: #fe681c;
+}
+
+.dasw-heading-close:nth-child(2) button {
+    background-color: #008037;
+}
+
+.dasw-heading-close:nth-child(3) button {
+    background-color: #d83a5e;
+}
+
+.dasw-heading-close:nth-child(4) button {
+    background-color: #58381c;
+}
+
+.dasw-sidebar-prj {
+    display: flex;
+    flex-direction: row;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
     width: 100%;
     height: 100%;
     background-color: #fff;
-    margin: 180px 0 0 0;
+    transition: 0.5s ease;
+    transition-property: width;
 }
 
 .dasw-prj-content {
@@ -768,6 +1051,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .dasw-prj-content img {
@@ -776,34 +1060,458 @@ body {
 
 .dasw-prj-text {
     width: 60%;
-    padding-left: 30px;
+    padding-left: 10px;
     font-size: 20px;
+    text-align: center;
 }
 
 .dasw-prj-text h1 {
     margin: 0;
 }
 
-.dasw-collapse {
+/* -------------------------------------------------- */
+
+/* DASW ABOUT HTML */
+/* -------------------------------------------------- */
+.about-loading{
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: #fff;
+}
+.about-loading img{
+    width: 30%;
+    height: auto;
+    animation: scaleAnimation 3s infinite;
+}
+.about-loading span{
+    font-size: 40px;
+}
+
+.about-loading progress {
+    width: 50%;
+    height: 5%;
+}
+.about-section1,
+.about-section2,
+.about-section3,
+.about-section4{
+    width: 100%;
+    height: 100vh;
+}
+.about-section1{
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../img/about-bg-comp.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.about-section1 img{
+    width: 30%;
+}
+
+.about-section1-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.about-section1-text h1{
+    margin: 0 0 30px 0;
+    font-size: 70px;
+    box-shadow: inset 0px 35px 0px 0px #23b69e;
+    padding: 10px 5px 0 5px;
+    text-shadow: 5px 5px #000;
+}
+
+.about-section1-text span{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 5px 0 5px;
+    text-shadow: 5px 5px #000;
+}
+
+#about-read-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-size: 60px;
+    color: #fff;
+    margin: 30px 0 0 0;
+}
+
+.about-section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/about-wall-code.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.about-section2-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-section2-img img:nth-child(1){
+    width: 25%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgb(60,65,92);
+    background: linear-gradient(12deg, rgba(60,65,92,0.7511379551820728) 27%, rgba(255,255,255,0) 61%);
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.about-section2-img img:nth-child(2){
+    width: 40%;
+    height: auto;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.8267682072829132) 53%, rgba(0,0,0,0) 80%);
+    background-size: 400% 400%;
+    padding: 10px;
+    border-radius: 40px;
+
+    -webkit-animation: aboutSection2img 3s ease infinite;
+    -moz-animation: aboutSection2img 3s ease infinite;
+    -o-animation: aboutSection2img 3s ease infinite;
+    animation: aboutSection2img 3s ease infinite;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.about-section2-img img:nth-child(1).Animate{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about-section2-img img:nth-child(2).Animate{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-section2-text{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.about-section2-text.Animate{
+    opacity: 1;
+    transition-delay: .5s;
+}
+
+.about-section2-text p{
+    margin: 0;
+    padding: 10px;
+}
+
+.about-section3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-image: url("../img/about-wall-developer.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.about-section3-hybrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.about-section3-hybrid h1{
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.about-section3-hybrid h1.Animate{
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+.about-section3-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section3-img img{
+    width: 20%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    margin: 5px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.about-section3-img img.Animate{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.about-section3-img img:nth-child(1){
+    transition-delay: 0ms;
+}
+
+.about-section3-img img:nth-child(2){
+    transition-delay: .25ms;
+}
+.about-section3-img img:nth-child(3){
+    transition-delay: .35ms;
+}
+.about-section3-img img:nth-child(4){
+    transition-delay: .45ms;
+}
+.about-section3-img img:nth-child(5){
+    transition-delay: .55ms;
+}
+.about-section3-img img:nth-child(6){
+    transition-delay: .65ms;
+}
+.about-section3-img img:nth-child(7){
+    transition-delay: .75ms;
+}
+
+.about-section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/about-wall-abstract.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.about-section4 h1{
+    text-align: center;
+}
+
+.about-section4-main{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.dasw-collapse span {
-    font-size: 30px;
-    margin-left: 30px;
+.about-section4-slider{
+    position: relative;
+    width: 65%;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: scale3d(.3, .3, .3);
+    transition: 1s;
+    opacity: 0;
 }
 
-.dasw-collapse i {
-    font-size: 50px;
-    transition: 0.5s ease;
+.about-section4-slider.Animate{
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
 }
+
+.about-section4-slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.about-section4-slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+}
+
+.about-section4-slide img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.about-section4-text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+}
+
+.about-section4-text h1{
+    margin: 10px 0;
+    padding: 0;
+    font-size: 40px;
+    text-align: left;
+}
+
+.about-section4-text span{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.about-section4-text address{
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+.about-section4-navigation{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev-btn, .next-btn{
+    z-index: 1;
+    font-size: 2em;
+    color: #222;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.about-section4-navigation-visibility{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-icon{
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.5);
+    width: 20px;
+    height: 10px;
+    transform: translateY(-50px);
+    margin: 0 6px;
+    border-radius: 2px;
+    box-shadow: 0 5px 25px rgb(1 1 1/ 20%);
+}
+
+.slide-icon.active{
+    background: #4285F4;
+}
+
 /* -------------------------------------------------- */
 
 /* DASW ANIMATION */
 /* -------------------------------------------------- */
+@-webkit-keyframes aboutSection2img {
+    0%{background-position:20% 0%}
+    50%{background-position:30% 10%}
+    100%{background-position:20% 0%}
+}
+@-moz-keyframes aboutSection2img {
+    0%{background-position:20% 0%}
+    50%{background-position:30% 10%}
+    100%{background-position:20% 0%}
+}
+@-o-keyframes aboutSection2img {
+    0%{background-position:20% 0%}
+    50%{background-position:30% 10%}
+    100%{background-position:20% 0%}
+}
+@keyframes aboutSection2img {
+    0%{background-position:20% 0%}
+    50%{background-position:30% 10%}
+    100%{background-position:20% 0%}
+}
+
+@keyframes scaleAnimation{
+    0%{
+        transform: scale3d(.6, .6, .6);
+        -webkit-transform: scale3d(.6, .6, .6);
+    }
+
+    50%{
+        transform: scale3d(.7, .7, .7);
+        -webkit-transform: scale3d(.7, .7, .7);
+    }
+    75%{
+        transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+    }
+
+   100%{
+        transform: scale3d(.6, .6, .6);
+        -webkit-transform: scale3d(.6, .6, .6);
+    }
+}
+
+@-webkit-keyframes scaleAnimation{
+    0%{
+        transform: scale3d(.6, .6, .6);
+        -webkit-transform: scale3d(.6, .6, .6);
+    }
+
+    50%{
+        transform: scale3d(.7, .7, .7);
+        -webkit-transform: scale3d(.7, .7, .7);
+    }
+    75%{
+        transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+    }
+
+   100%{
+        transform: scale3d(.6, .6, .6);
+        -webkit-transform: scale3d(.6, .6, .6);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .dasw-zoomIn {
     -webkit-animation-name: zoomIn;
@@ -864,6 +1572,35 @@ body {
 
     100% {
         opacity: 1;
+    }
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -1039,7 +1776,65 @@ body {
     }
 }
 
+@-webkit-keyframes dasw-closenav {
+    0% {
+        opacity: 0;
+        /* transform: translateX(-250px) rotate(-200deg); */
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        /* transform: translateX(0) rotate(0deg); */
+        transform: translateX(0);
+    }
+}
+
 @keyframes dasw-opennav {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px);
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px);
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes dasw-opennav {
     0% {
         animation-timing-function: ease-in;
         opacity: 0;
@@ -1118,6 +1913,50 @@ body {
     .dasw-about-text {
         width: 30%;
     }
+
+    /* DASW PROJECT HTML */
+    /* -------------------------------------------------- */
+    .dasw-prj-content img {
+        width: 30%;
+    }
+    /* -------------------------------------------------- */
+
+    /* DASW ABOUT HTML */
+    /* -------------------------------------------------- */
+    .about-section2-text p{
+        font-size: 25px;
+    }
+
+    .about-section4-text{
+        bottom: 72px;
+    }
+
+    .about-section4-text h1{
+        font-size: 35px;
+    }
+
+    .about-section4-text span{
+        font-size: 25px;
+    }
+
+    .about-section4-text address{
+        font-size: 15px;
+    }
+
+    #btt-about-btn{
+        width: 80px;
+        height: 80px;
+    }
+
+    #btt-about-btn i{
+        font-size: 35px;
+    }
+
+    #btt-about-btn span{
+        font-size: 20px;
+    }
+    /* -------------------------------------------------- */
+
 }
 
 @media screen and (max-width: 1440px) {
@@ -1136,9 +1975,27 @@ body {
     .dasw-contact-text {
         width: 50%
     }
+
+    /* DASW PROJECT HTML */
+    /* -------------------------------------------------- */
+
+    /* -------------------------------------------------- */
+
+    /* DASW ABOUT HTML */
+    /* -------------------------------------------------- */
+    .about-section2-text p{
+        font-size: 25px;
+    }
+    /* -------------------------------------------------- */
 }
 
-@media screen and (max-width: 1366px) {}
+@media screen and (max-width: 1366px) {
+
+    /* DASW PROJECT HTML */
+    /* -------------------------------------------------- */
+
+    /* -------------------------------------------------- */
+}
 
 @media screen and (max-width: 1024px) {
     .dasw-logo {
@@ -1194,6 +2051,126 @@ body {
     .dasw-contact-text {
         width: 50%;
     }
+
+    /* DASW PROJECT HTML */
+    /* -------------------------------------------------- */
+    .dasw-prj-logo {
+        width: 30%;
+    }
+
+    .dasw-prj-logo img {
+        width: 100%;
+    }
+
+    .dasw-prj-menunav {
+        width: 70%;
+    }
+
+    .dasw-text-overlay span {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dasw-prj-text h1 {
+        font-size: 20px;
+    }
+
+    .dasw-prj-content img {
+        width: 40%;
+    }
+
+    .dasw-code-prj-img span {
+        width: 50%;
+        text-align: center;
+    }
+
+    .dasw-text-prj-content {
+        height: 80%;
+    }
+
+    /* -------------------------------------------------- */
+
+    /* DASW ABOUT HTML */
+    /* -------------------------------------------------- */
+    .about-section1-text h1{
+        font-size: 50px;
+    }
+
+    .about-section1-text span{
+        font-size: 30px;
+    }
+
+    .about-section2-img img:nth-child(1){
+        width: 35%;
+    }
+
+    .about-section2-img img:nth-child(2){
+        width: 50%;
+    }
+
+    .about-section2-text p{
+        font-size: 20px;
+    }
+
+    .about-section3-img{
+        margin: 10px 0;
+    }
+
+    .about-section3-hybrid{
+        width: 70%;
+        justify-content: center;
+    }
+
+    .about-section3-hybrid h1{
+        font-size: 25px;
+    }
+
+    .about-section3-img img{
+        width: 21%;
+    }
+
+    .about-section4-main{
+        flex-direction: column;
+    }
+
+    .about-section4 h1 {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .about-section4-slider{
+        width: 95%;
+        height: 80vh;
+        padding: 0;
+    }
+
+    .about-section4-text{
+        bottom: 40px;
+    }
+
+    .about-section4-text h1{
+        text-align: left;
+        padding: 0;
+        font-size: 28px;
+    }
+
+    .about-section4-text span{
+        font-size: 20px;
+    }
+
+    .about-section4-text address{
+        font-size: 15px;
+    }
+
+    .slide-icon{
+        width: 20px;
+        margin: 20px 10px 0 10px;
+    }
+
+    #btt-back-home{
+        width: 20%;
+    }
+    /* -------------------------------------------------- */
 }
 
 @media screen and (max-width: 768px) {
@@ -1302,18 +2279,124 @@ body {
         width: 80%;
     }
 
-    /* .dasw-about-shape {
-        display: flex;
+    /* DASW PROJECT HTML */
+    /* -------------------------------------------------- */
+
+    .dasw-prj-content img {
+        width: 50%;
+    }
+
+    .dasw-prj-text {
+        display: none;
+    }
+
+    .dasw-prj-menunav {
+        display: none;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .dasw-prj-menunav a {
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dasw-prj-nav {
         flex-direction: column;
+        padding: 0;
     }
 
-    .dasw-about-shape-content {
-        display: block;
+    .dasw-prj-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px 0;
     }
 
-    .dasw-about-shape img {
-        width: 30%;
-    } */
+    .dasw-prj-bars-btn {
+        display: flex;
+    }
+
+    .dasw-prj-logo img {
+        width: 50%;
+    }
+
+    #dasw-prj-bars {
+        font-size: 40px;
+    }
+
+    .dasw-text-overlay {
+        height: 65%;
+    }
+
+    .dasw-prj-img:hover .dasw-text-overlay {
+        height: 65%;
+    }
+
+    .dasw-text-overlay h1 {
+        font-size: 20px;
+    }
+
+    .dasw-text-overlay span {
+        font-size: 15px;
+    }
+
+    .dasw-code-prj-img span {
+        width: 60%;
+    }
+
+    /* -------------------------------------------------- */
+
+    /* DASW ABOUT HTML */
+    /* -------------------------------------------------- */
+    .about-section1{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-section1 img{
+        width: 45%;
+        padding: 10px 0;
+    }
+
+    .about-section1 h1{
+        margin: 0;
+    }
+
+    .about-section1-text{
+        width: 100%;
+    }
+
+    .about-section2{
+        justify-content: space-evenly;
+    }
+
+    .about-section4-slider{
+        height: 65vh;
+    }
+
+    .about-section4-text{
+        width: 100%;
+        padding: 10px 0 10px 10px;
+    }
+
+    #btt-back-home{
+        width: 27%;
+    }
+
+    #btt-back-home i{
+        font-size: 20px;
+    }
+
+    #btt-back-home span{
+        font-size: 20px;
+    }
+    /* -------------------------------------------------- */
 }
 
 @media screen and (max-width: 480px) {
@@ -1364,6 +2447,100 @@ body {
     .dasw-footer-content img {
         width: 100%;
     }
+
+    /* DASW PROJECT HTML */
+    /* -------------------------------------------------- */
+    .dasw-code-prj-img span {
+        width: 50%;
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .dasw-prj-img {
+        width: 45%;
+    }
+
+    .dasw-prj-menunav {
+        flex-direction: column;
+    }
+
+    .dasw-prj-menunav a {
+        text-align: left;
+        width: 90%;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+    .dasw-prj-topnav a {
+        font-size: 35px;
+    }
+
+    .dasw-prj-content img {
+        width: 70%;
+    }
+
+    .dasw-text-prj-content {
+        width: 82%;
+        height: 90%;
+    }
+
+    .dasw-text-prj-content img {
+        width: 100%;
+    }
+
+    .dasw-heading-close button {
+        width: 30%;
+    }
+
+    /* -------------------------------------------------- */
+
+    /* DASW ABOUT HTML */
+    /* -------------------------------------------------- */
+    .about-section1 img{
+        width: 80%;
+    }
+
+    .about-section2-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-section2-img img:nth-child(1){
+        width: 80%;
+        height: 90%
+    }
+
+    .about-section2-img img:nth-child(2){
+        display: none;
+    }
+
+    .about-section2-text p{
+        font-size: 14px;
+    }
+
+    .about-section3-hybrid{
+        width: 100%;
+        height: 100%;
+        padding: 0 10px;
+    }
+
+    .about-section4-slider{
+        height: 50vh;
+    }
+
+    .about-section4-text{
+        display: none;
+    }
+
+    #btt-back-home{
+        width: 32%;
+    }
+
+    #btt-back-home i{
+        font-size: 30px;
+    }
+    /* -------------------------------------------------- */
 }
 
 @media screen and (max-width: 425px) {
@@ -1494,12 +2671,58 @@ body {
     #btt-btn span {
         font-size: 20px;
     }
+
+    /* DASW PROJECT HTML */
+    /* -------------------------------------------------- */
+    .dasw-prj-img {
+        width: 100%;
+    }
+
+    .dasw-text-overlay {
+        height: 50%;
+    }
+
+    .dasw-code-prj-img img {
+        width: 30%;
+    }
+
+    .dasw-code-prj-img span {
+        width: 65%;
+    }
+
+    /* -------------------------------------------------- */
+
+    /* DASW ABOUT HTML */
+    /* -------------------------------------------------- */
+    .about-section1 img{
+        width: 70%;
+    }
+
+    .about-section1-text h1{
+        font-size: 42px;
+    }
+
+    #btt-back-home{
+        width: 35%;
+    }
+    /* -------------------------------------------------- */
 }
 
 @media screen and (max-width: 375px) {
     .dasw-contact-text a {
         font-size: 25px;
     }
+
+    /* DASW ABOUT HTML */
+    /* -------------------------------------------------- */
+    .about-section4-slider{
+        height: 35vh;
+    }
+
+    #btt-back-home{
+        width: 40%;
+    }
+    /* -------------------------------------------------- */
 }
 
 @media screen and (max-width: 320px) {
@@ -1546,6 +2769,55 @@ body {
     #btt-btn span {
         font-size: 15px;
     }
+
+    /* DASW PROJECT HTML */
+    /* -------------------------------------------------- */
+    .dasw-text-prj-content {
+        width: 75%;
+    }
+
+    .dasw-heading-close button,
+    .dasw-heading-close h1 {
+        font-size: 20px;
+    }
+
+    .dasw-text-overlay {
+        height: 65%;
+    }
+
+    .dasw-prj-topnav a {
+        font-size: 25px;
+    }
+
+    /* -------------------------------------------------- */
+
+    /* DASW ABOUT HTML */
+    /* -------------------------------------------------- */
+    .about-section1 img{
+        width: 95%;
+    }
+
+    .about-section1-text h1{
+        font-size: 35px;
+    }
+
+    .about-section2-img img:nth-child(1){
+        width: 90%;
+        height: 70%
+    }
+
+    .about-section2-text p{
+        font-size: 13px;
+    }
+
+    .about-section4-slider{
+        height: 30vh;
+    }
+
+    #btt-back-home{
+        width: 48%;
+    }
+    /* -------------------------------------------------- */
 }
 
 /* -------------------------------------------------- */
