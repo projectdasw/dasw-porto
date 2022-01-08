@@ -1,6 +1,0 @@
-#Contents of .htaccess
-
-RewriteEngine on
-RewriteCond %{HTTP_REFERER} !^https://projectdasw.github.io/dasw-porto/.*$ [NC]
-RewriteCond %{HTTP_REFERER} !^https://projectdasw.github.io/dasw-porto/.*$ [NC]
-RewriteRule .(mp4|mp3|avi)$ - [F]
