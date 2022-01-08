@@ -6,6 +6,21 @@ document.onscroll = function () {
     scrollFunction()
 };
 
+var home_menu = document.getElementById("home");
+var project_menu = document.getElementById("project");
+var about_menu = document.getElementById("about");
+var contact_menu = document.getElementById("contact");
+
+home_menu.addEventListener("click", () => {
+    window.setInterval(() => {
+        document.querySelector(".loading").style.display = "flex";
+        document.querySelector(".loading").style.transform = "translateX(-100%)";
+        document.querySelector(".loading").style.transition = "1s";
+        window.setTimeout(() => {
+            document.querySelector(".loading").style.display = "none";
+        }, 4000);
+    }, 5000);
+})
 var mybutton = document.getElementById("btt-btn");
 var navbar = document.getElementById("nav");
 var navmenu = document.getElementById("nav-menu");
