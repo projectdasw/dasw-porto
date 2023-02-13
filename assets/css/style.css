@@ -1,4 +1,8 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap');
 
 * {
     font-family: 'Josefin Sans',
@@ -14,2810 +18,712 @@ html {
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-/* BACK TO TOP BUTTON */
-/* -------------------------------------------------- */
-#btt-btn {
-    display: none;
-    /* display: flex; */
-    width: 100px;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    padding: 10px;
-    background-color: rgb(255, 0, 0);
-    color: #fff;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 5px;
-}
-
-#btt-btn i {
-    font-size: 60px;
-}
-
-#btt-btn span {
-    font-size: 25px;
-    margin: 10px 0 0 0;
-}
-
-#btt-prj-btn {
-    display: none;
-    /* display: flex; */
-    width: 100px;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    bottom: 150px;
-    right: 4px;
-    padding: 10px;
-    background-color: rgb(255, 0, 0);
-    color: #fff;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 5px;
-}
-#btt-about-btn {
-    display: none;
-    /* display: flex; */
-    width: 100px;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    padding: 10px;
-    background-color: rgb(170 38 32);
-    color: #fff;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 5px;
-}
-
-#btt-about-btn i {
-    font-size: 60px;
-}
-
-#btt-about-btn span {
-    font-size: 25px;
-    margin: 10px 0 0 0;
-}
-
-#btt-back-home {
-    display: none;
-    /* display: flex; */
-    width: 15%;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    left: 10px;
-    bottom: 10px;
-    padding: 10px;
-    background-color: transparent;
-    color: #fff;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 5px;
-    border: 1px solid #fff;
-}
-
-#btt-back-home i {
-    font-size: 60px;
-    margin: 0 10px 0 0;
-}
-
-#btt-back-home span {
-    font-size: 25px;
-}
-
-
-/* -------------------------------------------------- */
-
-/* DASW INDEX HTML */
-/* -------------------------------------------------- */
-.loading{
-    /* display: flex; */
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 999999;
-    background-color: #fff;
-}
-.loading img{
-    width: 30%;
-    height: auto;
-    animation: scaleAnimation 3s infinite;
-}
-.loading span{
-    font-size: 40px;
-}
-
-.dasw-header {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-}
-
-.dasw-nav {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    /* padding: 10px; */
-    z-index: 1;
-    background-color: rgb(255, 255, 255);
-}
-
-.dasw-nav-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 0;
-    background-color: #fff;
-}
-
-.dasw-topnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 100%;
-    padding: 10px;
-    background-color: #E4F1FE;
-}
-
-.dasw-topnav a {
-    padding: 5px;
-    margin: 0 5px;
-    font-size: 18px;
-    font-weight: bolder;
-    text-decoration: none;
-    color: #000;
-}
-
-.dasw-topnav a:nth-child(1) i {
-    color: #3b5998;
-}
-
-.dasw-topnav a:nth-child(2) i {
-    color: #00acee;
-}
-
-.dasw-topnav a:nth-child(3) i {
-    color: #db4a39;
-}
-
-.dasw-topnav a:nth-child(4) i {
-    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.dasw-topnav a:nth-child(5) i {
-    color: #0e76a8;
-}
-
-.dasw-topnav a:nth-child(6) i {
-    color: #171515;
-}
-
-.dasw-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 10px;
-}
-
-#dasw-open-bars,
-#dasw-close-bars {
-    display: none;
-}
-
-.dasw-logo img {
-    width: 40%;
-    justify-content: flex-start;
-}
-
-
-.dasw-menunav {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.dasw-menunav a {
-    padding: 10px;
-    margin: 0 10px;
-    font-size: 25px;
-    text-decoration: none;
-    color: #000;
-    background: linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 100% 0,
-        linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 0 0,
-        linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 0 100%,
-        linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 100% 100%;
-    background-size: var(--d, 0) 3px,
-        3px var(--d, 0);
-    background-repeat: no-repeat;
-    transition: 0.5s;
-}
-
-.dasw-menunav a:hover {
-    --d: 100%;
-}
-
-.dasw-img-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    background-image: url("../img/header-bg.jpg");
-    background-size: cover;
-}
-
-.dasw-img-header img:nth-child(1) {
-    width: 40%;
-}
-
-.dasw-img-header img:nth-child(2) {
-    width: 50%;
-    height: 30%;
-}
-
-.dasw-features {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    padding: 15px;
-    background: rgb(232, 96, 71);
-    background: -moz-linear-gradient(321deg, rgba(232, 96, 71, 1) 25%, rgba(223, 150, 72, 1) 50%, rgba(42, 156, 160, 1) 75%, rgba(63, 234, 186, 1) 100%);
-    background: -webkit-linear-gradient(321deg, rgba(232, 96, 71, 1) 25%, rgba(223, 150, 72, 1) 50%, rgba(42, 156, 160, 1) 75%, rgba(63, 234, 186, 1) 100%);
-    background: linear-gradient(321deg, rgba(232, 96, 71, 1) 25%, rgba(223, 150, 72, 1) 50%, rgba(42, 156, 160, 1) 75%, rgba(63, 234, 186, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e86047", endColorstr="#3feaba", GradientType=1);
-}
-
-.dasw-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-}
-
-.dasw-main-features {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.dasw-features-heading,
-.dasw-project-heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.dasw-features-heading h1 {
-    margin: 0;
-    font-size: 60px;
-    color: #fff;
-}
-
-.dasw-features-heading span {
-    color: #fff;
-    font-size: 25px;
-}
-
-.dasw-features-content {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    margin: 0 10px;
-    padding: 10px;
-}
-
-.dasw-features-content:nth-child(1) img {
-    width: 65%;
-}
-
-.dasw-features-content img {
-    width: 50%;
-    position: relative;
-    animation-name: dasw-FeatImgAni;
-    animation-duration: 2s;
-    /* animation-timing-function: linear; */
-    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
-
-.dasw-features-text {
-    text-align: center;
-}
-
-.dasw-project-heading h1 {
-    background-image: linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin: 30px 0 10px 0;
-    font-size: 60px;
-}
-
-.dasw-main-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    background: transparent;
-    background: -moz-linear-gradient(327deg, rgba(0, 0, 0, 0.9527408375459558) 0%, rgba(67, 67, 67, 0.8883150672378326) 70%);
-    background: -webkit-linear-gradient(327deg, rgba(0, 0, 0, 0.9527408375459558) 0%, rgba(67, 67, 67, 0.8883150672378326) 70%);
-    background: linear-gradient(327deg, rgba(0, 0, 0, 0.9527408375459558) 0%, rgba(67, 67, 67, 0.8883150672378326) 70%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#434343", GradientType=1);
-}
-
-.dasw-project-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    /* padding: 10px; */
-}
-
-.dasw-project-img {
-    display: flex;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid black; */
-    padding: 10px;
-    animation-name: dasw-ImgPrjAni;
-    animation-duration: 6s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-.dasw-project-img img {
-    width: 60%;
-}
-
-.dasw-project-text {
-    display: flex;
-    width: 40%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgba(255, 255, 255, 0.3); */
-    /* border: 1px solid black; */
-    padding: 20px;
-    color: #fff;
-}
-
-.dasw-project-text img {
-    width: 100%;
-}
-
-.dasw-project-text h2 {
-    margin: 0 0 3px 0;
-    font-size: 60px;
-    text-align: center;
-}
-
-.dasw-project-text span {
-    font-size: 20px;
-    text-align: center;
-}
-
-.dasw-project-button {
-    text-decoration: none;
-    border: 1px solid #00F260;
-    border-radius: 10px;
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-    background: linear-gradient(to right, #0575E6, #00F260);
-    transition: ease-out 0.3s;
-}
-
-.dasw-project-button:hover {
-    box-shadow: inset -50px 0 0 0 #0a6849;
-}
-
-.dasw-bg-img {
-    background-image: url("../img/logo/dasw-webbanner.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.dasw-project-content:nth-child(2) .dasw-project-text {
-    order: 1;
-}
-
-.dasw-project-content:nth-child(2) .dasw-project-img {
-    order: 2;
-}
-
-.dasw-about {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    background-image: url("../img/about-bg.png");
-    background-size: cover;
-    background-position: center;
-    overflow-x: hidden;
-}
-
-.dasw-about-shape {
-    display: none;
-}
-
-.dasw-about-content {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.dasw-about-heading h1 {
-    font-size: 60px;
-    text-align: center;
-}
-
-.dasw-about-img {
-    display: flex;
-    width: 40%;
-    order: 2;
-}
-
-.dasw-about-img img {
-    /* border: 1px solid black; */
-    width: 100%;
-    padding: 40px 0 0 0;
-
-}
-
-.dasw-about-text {
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid black; */
-    width: 20%;
-    text-align: justify;
-    padding: 10px;
-    order: 1;
-}
-
-.dasw-about-text img {
-    width: 70%;
-    margin: 0 auto
-}
-
-.dasw-about-text p {
-    margin: 0;
-    font-size: 25px;
-    margin: 10px 0 0 0;
-    font-weight: bolder;
-}
-
-.dasw-about-text h1 {
-    font-size: 40px;
-    margin: 0;
-}
-
-.dasw-contact {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    justify-content: center;
-    background-image: url("../img/contact-bg.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.dasw-contact-heading {
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.dasw-contact-heading h1 {
-    font-size: 60px;
-    margin: 30px 0 10px 0;
-    color: #fff;
-}
-
-.dasw-contact-content {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    justify-content: center;
-    padding: 10px;
-}
-
-.dasw-contact-img {
-    display: flex;
-    width: 40%;
-    /* border: 1px solid black; */
-}
-
-.dasw-contact-img img {
-    width: 100%;
-}
-
-.dasw-contact-text {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-}
-
-.dasw-contact-text h2 {
-    text-align: center;
-    font-size: 30px;
-    color: #fff;
-}
-
-.dasw-contact-text a {
-    padding: 10px;
-    font-size: 40px;
-    text-decoration: none;
-    margin: 10px 0;
-    border-radius: 10px;
-    color: #fff;
-    transition: .5s ease-out;
-}
-
-.dasw-contact-text a i {
-    transition: .4s ease-in;
-}
-
-.dasw-contact-text a:nth-last-child(2) {
-    background-color: #c6211f;
-}
-
-.dasw-contact-text a:nth-last-child(1) {
-    background-color: #25d366;
-}
-
-.dasw-contact-text a:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.dasw-contact-text a:hover i {
-    transform: rotate(360deg);
-}
-
-.dasw-footer {
-    display: flex;
-    max-width: 100%;
-    background-image: url("../img/footer-bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.dasw-footer-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-
-}
-
-.dasw-footer-content img {
-    width: 30%;
-    margin: 10px 0;
-}
-
-.dasw-footer-content p {
-    text-align: center;
-    margin: 0;
-    width: 45%;
-}
-
-.dasw-footer-evenly {
-    display: flex;
-    width: 40%;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.dasw-footer-social {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 15%;
-    padding: 10px;
-}
-
-.dasw-footer-social i {
-    margin: 0 5px;
-    font-size: 35px;
-    font-weight: bolder;
-    text-decoration: none;
-    color: #000;
-}
-
-.dasw-footer-social i:nth-child(1) {
-    color: #3b5998;
-}
-
-.dasw-footer-social i:nth-child(2) {
-    color: #00acee;
-}
-
-.dasw-footer-social i:nth-child(3) {
-    color: #db4a39;
-}
-
-.dasw-footer-social i:nth-child(4) {
-    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.dasw-footer-social i:nth-child(5) {
-    color: #0e76a8;
-}
-
-.dasw-footer-social i:nth-child(6) {
-    color: #171515;
-}
-
-.dasw-copyright {
-    display: flex;
-    margin: 30px 0;
-}
-
-/* -------------------------------------------------- */
-
-/* DASW PROJECT HTML */
-/* -------------------------------------------------- */
-
-.dasw-prj-header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.dasw-prj-nav {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    /* padding: 10px; */
-    z-index: 1;
-    background-color: rgb(255, 255, 255);
-}
-
-.dasw-prj-topnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 100%;
-    padding: 10px;
-    background-color: #E4F1FE;
-}
-
-.dasw-prj-topnav a {
-    padding: 5px;
-    margin: 0 5px;
-    font-size: 18px;
-    font-weight: bolder;
-    text-decoration: none;
-    color: #000;
-}
-
-.dasw-prj-topnav a:nth-child(1) i {
-    color: #3b5998;
-}
-
-.dasw-prj-topnav a:nth-child(2) i {
-    color: #00acee;
-}
-
-.dasw-prj-topnav a:nth-child(3) i {
-    color: #db4a39;
-}
-
-.dasw-prj-topnav a:nth-child(4) i {
-    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.dasw-prj-topnav a:nth-child(5) i {
-    color: #0e76a8;
-}
-
-.dasw-prj-topnav a:nth-child(6) i {
-    color: #171515;
-}
-
-.dasw-prj-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 10px;
-}
-
-.dasw-prj-logo img {
-    width: 40%;
-    justify-content: flex-start;
-}
-
-.dasw-prj-bars-btn {
-    display: none;
-}
-
-
-.dasw-prj-menunav {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.dasw-prj-menunav a {
-    padding: 10px;
-    margin: 0 10px;
-    font-size: 25px;
-    text-decoration: none;
-    color: #000;
-    background: linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 100% 0,
-        linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 0 0,
-        linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 0 100%,
-        linear-gradient(rgb(49, 108, 236), rgb(214, 69, 43)) 100% 100%;
-    background-size: var(--d, 0) 3px,
-        3px var(--d, 0);
-    background-repeat: no-repeat;
-    transition: 0.5s;
-}
-
-.dasw-prj-menunav a:hover {
-    --d: 100%;
-}
-
-.dasw-code-bg {
-    display: flex;
-    z-index: -1;
-}
-
-.dasw-code-bg video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-}
-
-.dasw-prj {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100%;
-}
-
-.dasw-main-prj {
-    display: flex;
-    width: 100%;
-}
-
-.dasw-code-prj-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: max-content;
-    /* background-color: rgb(255, 255, 255); */
-}
-
-.dasw-code-prj-img {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-}
-
-.dasw-code-prj-img img {
-    width: 20%;
-}
-
-.dasw-code-prj-img span {
-    font-size: 60px;
-    margin-left: 50px;
-    color: #fff;
-}
-
-.dasw-code-prj-projectlist {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin: 20px 0;
-    height: auto;
-}
-
-.dasw-prj-img {
-    position: relative;
-    flex-direction: column;
-    width: 30%;
-    height: auto;
-    border: 1px solid black;
-    margin: 5px;
-    padding: 5px;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-.dasw-text-overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-    border-radius: 10px;
-    color: #fff;
-    text-align: center;
-}
-
-.dasw-text-overlay h1 {
-    margin: 0 0 10px 0;
-    font-size: 30px;
-}
-
-.dasw-text-overlay span {
-    font-size: 20px;
-    margin: 0 0 10px 0;
-}
-
-.dasw-text-overlay button {
-    outline: none;
-    border: none;
-    font-size: 20px;
-    padding: 10px;
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s ease;
-}
-
-.dasw-text-overlay button:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-.dasw-prj-img:hover .dasw-text-overlay {
-    height: 100%;
-}
-
-.dasw-prj-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.dasw-text-prj-info {
-    display: none;
-    width: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.7);
-    animation-name: fadeOut;
-    animation-duration: 1s;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-}
-
-.dasw-text-prj-content {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 90%;
-    background-color: #fff;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    padding: 30px;
-}
-
-.dasw-text-prj-info:nth-child(1) .dasw-text-prj-content button {
-    background-color: #fe681c;
-}
-
-.dasw-text-prj-info:nth-child(2) .dasw-text-prj-content button {
-    background-color: #008037;
-}
-
-.dasw-text-prj-info:nth-child(3) .dasw-text-prj-content button {
-    background-color: #d83a5e;
-}
-
-.dasw-text-prj-info:nth-child(4) .dasw-text-prj-content button {
-    background-color: #58381c;
-}
-
-.dasw-text-prj-content img {
-    width: 50%;
-    margin: 10px auto;
-}
-
-.dasw-heading-close {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-}
-
-.dasw-heading-close button {
-    display: flex;
-    justify-content: center;
-    width: 15%;
-    padding: 20px 30px;
-    font-size: 30px;
-    border: none;
-    color: #fff;
-    border-radius: 20px;
-}
-
-.dasw-heading-close:nth-child(1) button {
-    background-color: #fe681c;
-}
-
-.dasw-heading-close:nth-child(2) button {
-    background-color: #008037;
-}
-
-.dasw-heading-close:nth-child(3) button {
-    background-color: #d83a5e;
-}
-
-.dasw-heading-close:nth-child(4) button {
-    background-color: #58381c;
-}
-
-.dasw-sidebar-prj {
-    display: flex;
-    flex-direction: row;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    transition: 0.5s ease;
-    transition-property: width;
-}
-
-.dasw-prj-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.dasw-prj-content img {
-    width: 20%;
-}
-
-.dasw-prj-text {
-    width: 60%;
-    padding-left: 10px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.dasw-prj-text h1 {
-    margin: 0;
-}
-
-/* -------------------------------------------------- */
-
-/* DASW ABOUT HTML */
-/* -------------------------------------------------- */
-.about-loading{
-    /* display: flex; */
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    background-color: #fff;
-}
-.about-loading img{
-    width: 30%;
-    height: auto;
-    animation: scaleAnimation 3s infinite;
-}
-.about-loading span{
-    font-size: 40px;
-}
-
-.about-loading progress {
-    width: 50%;
-    height: 5%;
-}
-.about-section1,
-.about-section2,
-.about-section3,
-.about-section4{
-    width: 100%;
-    height: 100vh;
-}
-.about-section1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
     background-image: url("../img/about-bg-comp.jpg");
-    background-position: center;
     background-size: cover;
-    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.about-section1 img{
-    width: 30%;
+/* ANIMATION */
+/* ----------------------------- */
+
+@keyframes slide-button {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-45px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
-.about-section1-text{
+/* END OF ANIMATION */
+/* ----------------------------- */
+
+/* PRELOADER */
+/* ----------------------------- */
+
+#preloader {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     height: 100%;
 }
 
-.about-section1-text h1{
-    margin: 0 0 30px 0;
-    font-size: 70px;
-    box-shadow: inset 0px 35px 0px 0px #23b69e;
-    padding: 10px 5px 0 5px;
-    text-shadow: 5px 5px #000;
+#preloader img {
+    width: 250px;
+    height: 250px;
 }
 
-.about-section1-text span{
-    font-size: 40px;
-    text-align: center;
-    padding: 10px 5px 0 5px;
-    text-shadow: 5px 5px #000;
-}
-
-#about-read-more{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: transparent;
-    font-size: 60px;
-    color: #fff;
-    margin: 30px 0 0 0;
-}
-
-.about-section2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/about-wall-code.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.about-section2-img{
+#preload-span-1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
 }
 
-.about-section2-img img:nth-child(1){
-    width: 25%;
-    height: 100%;
-    border-radius: 50%;
-    background: rgb(60,65,92);
-    background: linear-gradient(12deg, rgba(60,65,92,0.7511379551820728) 27%, rgba(255,255,255,0) 61%);
-    transform: translateX(-100px);
-    opacity: 0;
-    transition: 1s;
+#preload-span-1 img {
+    margin: 0 0 0 15px;
+    width: 100px;
+    height: 100px;
 }
 
-.about-section2-img img:nth-child(2){
-    width: 40%;
-    height: auto;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,0.8267682072829132) 53%, rgba(0,0,0,0) 80%);
-    background-size: 400% 400%;
+#preload-span-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#preload-span-2 img {
+    position: absolute;
+    width: 60em;
+    height: 40em;
+    bottom: 0;
+    right: -5em;
+}
+
+#preload-span-2 span {
+    font-size: 40px;
+}
+
+#preload-span-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#preload-span-3 img {
+    width: 15em;
+    height: 15em;
+}
+
+#preload-span-3 h1 {
+    margin: 0.5em 0 0 0;
+    font-size: 5em;
+}
+
+/* END OF PRELOADER */
+/* ----------------------------- */
+
+/* DASW HEADER */
+/* ----------------------------- */
+#dasw-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+}
+
+#dasw-brand {
+    margin: 0;
     padding: 10px;
-    border-radius: 40px;
-
-    -webkit-animation: aboutSection2img 3s ease infinite;
-    -moz-animation: aboutSection2img 3s ease infinite;
-    -o-animation: aboutSection2img 3s ease infinite;
-    animation: aboutSection2img 3s ease infinite;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.about-section2-img img:nth-child(1).Animate{
+#dasw-brand img {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 10px 0;
+}
+
+/* NAVIGATION MENU */
+/* ----------------------------- */
+.nav-menu {
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-menu ul li {
+    list-style: none;
+    padding: 10px;
+    color: #fff;
+    transition: all 0.35s ease;
+}
+
+.nav-menu ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu ul li a::before,
+.nav-menu ul li a::after {
+    content: 'DASW';
+    font-size: 7px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin: 0 10px;
+    padding: 2px;
+    opacity: 0;
+    transition: all 0.15s ease;
+}
+
+.nav-menu ul li a:hover::before,
+.nav-menu ul li a:hover::after {
     opacity: 1;
     transform: translateX(0);
 }
 
-.about-section2-img img:nth-child(2).Animate{
-    opacity: 1;
-    transform: translateY(0);
+.nav-menu ul li a::before {
+    color: rgb(32, 227, 178);
+    border-color: rgb(32, 227, 178);
+    transform: translateX(-50%);
 }
 
-.about-section2-text{
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
-    width: 90%;
-    opacity: 0;
-    transition: 1s;
+.nav-menu ul li a::after {
+    color: rgb(194, 65, 34);
+    border-color: rgb(194, 65, 34);
+    transform: translateX(50%);
 }
 
-.about-section2-text.Animate{
-    opacity: 1;
-    transition-delay: .5s;
-}
-
-.about-section2-text p{
-    margin: 0;
-    padding: 10px;
-}
-
-.about-section3{
+.brand-name {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    color: #fff;
+}
+
+.brand-name strong {
+    margin: 0 0 5px 0;
+}
+
+.brand-name span {
+    font-size: 13px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    background-image: url("../img/about-wall-developer.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.about-section3-hybrid{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
     height: 100%;
-    padding: 10px 30px;
+    bottom: 0;
+    left: 3.5em;
     color: #fff;
 }
 
-.about-section3-hybrid h1{
+.social-media ul {
     margin: 0;
-    text-align: center;
-    font-size: 30px;
-    opacity: 0;
-    transition: 1s;
-}
-
-.about-section3-hybrid h1.Animate{
-    opacity: 1;
-    transition-delay: 1s;
-}
-
-.about-section3-img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-section3-img img{
-    width: 20%;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    margin: 5px;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: 1s;
-}
-
-.about-section3-img img.Animate{
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.about-section3-img img:nth-child(1){
-    transition-delay: 0ms;
-}
-
-.about-section3-img img:nth-child(2){
-    transition-delay: .25ms;
-}
-.about-section3-img img:nth-child(3){
-    transition-delay: .35ms;
-}
-.about-section3-img img:nth-child(4){
-    transition-delay: .45ms;
-}
-.about-section3-img img:nth-child(5){
-    transition-delay: .55ms;
-}
-.about-section3-img img:nth-child(6){
-    transition-delay: .65ms;
-}
-.about-section3-img img:nth-child(7){
-    transition-delay: .75ms;
-}
-
-.about-section4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/about-wall-abstract.jpg");
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-}
-
-.about-section4 h1{
-    text-align: center;
-}
-
-.about-section4-main{
+    padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
-.about-section4-slider{
-    position: relative;
-    width: 65%;
-    height: 80vh;
-    overflow: hidden;
-    border-radius: 10px;
-    transform: scale3d(.3, .3, .3);
-    transition: 1s;
-    opacity: 0;
+.social-media ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
 }
 
-.about-section4-slider.Animate{
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
+.social-media span {
+    margin: 0 0 5px 0;
 }
 
-.about-section4-slide{
-    position: absolute;
-    width: 100%;
+/* END OF NAVIGATION MENU */
+/* ----------------------------- */
+/* END OF DASW HEADER */
+/* ----------------------------- */
+
+/* DASW CONTENT */
+/* ----------------------------- */
+/* DASW HI */
+/* ----------------------------- */
+
+#dasw-content {
+    margin: 0;
+    padding: 0 3em 0 3em;
+    width: 80%;
     height: 100%;
-    clip-path: circle(0% at 0 50%);
-}
-
-.about-section4-slide.active{
-    clip-path: circle(150% at 0 50%);
-    transition: 2s;
-}
-
-.about-section4-slide img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* object-fit: cover; */
-}
-
-.about-section4-text{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 100px;
     color: #fff;
-    background: rgba(0, 0, 0, 0.8);
-    width: 80%;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.about-section4-text h1{
-    margin: 10px 0;
-    padding: 0;
-    font-size: 40px;
-    text-align: left;
+#dasw-hi {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
 }
 
-.about-section4-text span{
-    font-size: 30px;
-    font-weight: bolder;
+#dasw-hi h1 {
+    font-size: 3.5em;
+    font-family: 'Play', sans-serif;
+    margin: 0;
 }
 
-.about-section4-text address{
-    font-size: 20px;
-    margin: 10px 0 0 0;
+#dasw-hi h1 span {
+    font-size: 1.5em;
 }
 
-.about-section4-navigation{
-    height: 100%;
+#dasw-hi h1 p:nth-last-child(2) {
+    font-family: 'Play', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: normal;
+    font-size: 0.4em;
+}
+
+#dasw-hi h1 p:nth-last-child(1) {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 100;
+    margin: 1em 0 0 0;
+    font-size: 0.4em;
+    letter-spacing: 0.15cm;
+    font-style: italic;
+}
+
+#dasw-hi img {
+    width: 60em;
+    margin: 5em 0;
+}
+
+.slide-button {
+    text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 5.3em;
+    padding: 0.5em;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 100;
+    animation: slide-button 2s ease 0s infinite alternate backwards;
 }
 
-.prev-btn, .next-btn{
-    z-index: 1;
-    font-size: 2em;
-    color: #222;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    cursor: pointer;
-}
+/* END OF DASW HI */
+/* ----------------------------- */
 
-.about-section4-navigation-visibility{
-    z-index: 1;
+/* DASW PROJECT */
+/* ----------------------------- */
+
+#dasw-project {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
-.slide-icon{
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.5);
-    width: 20px;
-    height: 10px;
-    transform: translateY(-50px);
-    margin: 0 6px;
-    border-radius: 2px;
-    box-shadow: 0 5px 25px rgb(1 1 1/ 20%);
+#dasw-project h1 {
+    margin: 0 0 1em 0;
+    font-size: 4em;
 }
 
-.slide-icon.active{
-    background: #4285F4;
+.project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-/* -------------------------------------------------- */
-
-/* DASW ANIMATION */
-/* -------------------------------------------------- */
-@-webkit-keyframes aboutSection2img {
-    0%{background-position:20% 0%}
-    50%{background-position:30% 10%}
-    100%{background-position:20% 0%}
-}
-@-moz-keyframes aboutSection2img {
-    0%{background-position:20% 0%}
-    50%{background-position:30% 10%}
-    100%{background-position:20% 0%}
-}
-@-o-keyframes aboutSection2img {
-    0%{background-position:20% 0%}
-    50%{background-position:30% 10%}
-    100%{background-position:20% 0%}
-}
-@keyframes aboutSection2img {
-    0%{background-position:20% 0%}
-    50%{background-position:30% 10%}
-    100%{background-position:20% 0%}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1.5em 1.5em 0;
+    padding: 1em;
+    width: 20em;
+    border-radius: 0.5em;
+    background-color: #2c2c2e;
 }
 
-@keyframes scaleAnimation{
-    0%{
-        transform: scale3d(.6, .6, .6);
-        -webkit-transform: scale3d(.6, .6, .6);
-    }
-
-    50%{
-        transform: scale3d(.7, .7, .7);
-        -webkit-transform: scale3d(.7, .7, .7);
-    }
-    75%{
-        transform: scale3d(1, 1, 1);
-        -webkit-transform: scale3d(1, 1, 1);
-    }
-
-   100%{
-        transform: scale3d(.6, .6, .6);
-        -webkit-transform: scale3d(.6, .6, .6);
-    }
+.card-img {
+    width: 10em;
+    margin: 0 auto;
 }
 
-@-webkit-keyframes scaleAnimation{
-    0%{
-        transform: scale3d(.6, .6, .6);
-        -webkit-transform: scale3d(.6, .6, .6);
-    }
-
-    50%{
-        transform: scale3d(.7, .7, .7);
-        -webkit-transform: scale3d(.7, .7, .7);
-    }
-    75%{
-        transform: scale3d(1, 1, 1);
-        -webkit-transform: scale3d(1, 1, 1);
-    }
-
-   100%{
-        transform: scale3d(.6, .6, .6);
-        -webkit-transform: scale3d(.6, .6, .6);
-    }
+.card:nth-child(6) .card-img {
+    width: 17em;
 }
 
-@keyframes slideLeft {
-    0% {
-        opacity: 1;
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-    }
+.card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em 0;
 }
 
-.dasw-zoomIn {
-    -webkit-animation-name: zoomIn;
-    animation-name: zoomIn;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+.card-title h3 {
+    text-align: center;
+    margin: 1em 0 0.5em 0;
 }
 
-@-webkit-keyframes zoomIn {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale3d(.3, .3, .3);
-        transform: scale3d(.3, .3, .3);
-    }
-
-    100% {
-        opacity: 1;
-    }
+.card-title span {
+    margin: 0 0 0.5em 0;
 }
 
-@keyframes zoomIn {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale3d(.3, .3, .3);
-        transform: scale3d(.3, .3, .3);
-    }
-
-    100% {
-        opacity: 1;
-    }
+.card-body {
+    height: 10em;
+    margin: 0 0 1em 0;
 }
 
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+.card-body .desc {
+    margin: 0;
 }
 
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.card-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.card-button a {
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 0.8em;
+    color: #fff;
 }
 
-.fadeOut {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+/* END OF DASW PROJECT */
+/* ----------------------------- */
+/* DASW ABOUT CONTACT */
+/* ----------------------------- */
+
+.dasw-about-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
-@-webkit-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
+/* ABOUT */
+/* ----------------------------- */
 
-    100% {
-        opacity: 0;
-    }
+.about-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
+.about {
+    margin: 0;
+    font-size: 4em;
 }
 
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+.about-contact h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.3cm;
 }
 
-@-webkit-keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
+.about-contact p {
+    margin: 0;
 }
 
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
+.photo-profile img {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    right: 0;
+    width: 22em;
 }
 
-.fadeOutDown {
-    -webkit-animation-name: fadeOutDown;
-    animation-name: fadeOutDown;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+/* END OF ABOUT */
+/* ----------------------------- */
+
+/* SKILLS */
+/* ----------------------------- */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
 }
 
-@-webkit-keyframes fadeOutDown {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
+.skills h1 {
+    margin-bottom: 0.3em;
+    font-size: 4em;
 }
 
-@keyframes fadeOutDown {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
 }
 
-@-webkit-keyframes dasw-FeatImgAni {
-    0% {
-        transform: scale(1, 1) translateY(0);
-    }
-
-    10% {
-        transform: scale(1.1, .9) translateY(0);
-    }
-
-    30% {
-        transform: scale(.9, 1.1) translateY(-50px);
-    }
-
-    50% {
-        transform: scale(1.05, .95) translateY(0);
-    }
-
-    57% {
-        transform: scale(1, 1) translateY(-7px);
-    }
-
-    64% {
-        transform: scale(1, 1) translateY(0);
-    }
-
-    100% {
-        transform: scale(1, 1) translateY(0);
-    }
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25em;
+    height: 25em;
+    margin: 0.5em;
+    background-color: #2c2c2e;
+    border-radius: 1em;
 }
 
-@keyframes dasw-FeatImgAni {
-    0% {
-        transform: scale(1, 1) translateY(0);
-    }
-
-    10% {
-        transform: scale(1.1, .9) translateY(0);
-    }
-
-    30% {
-        transform: scale(.9, 1.1) translateY(-50px);
-    }
-
-    50% {
-        transform: scale(1.05, .95) translateY(0);
-    }
-
-    57% {
-        transform: scale(1, 1) translateY(-7px);
-    }
-
-    64% {
-        transform: scale(1, 1) translateY(0);
-    }
-
-    100% {
-        transform: scale(1, 1) translateY(0);
-    }
+.skills-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15em;
 }
 
-@keyframes daswNavIn {
-    0% {
-        opacity: 0;
-        transform: rotateX(-100deg);
-        transform-origin: top;
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotateX(0deg);
-        transform-origin: top;
-    }
+.skills-logo img {
+    width: 13em;
 }
 
-@keyframes daswNavOut {
-    0% {
-        opacity: 1;
-        transform: rotateX(0deg);
-        transform-origin: top;
-    }
-
-    100% {
-        opacity: 0;
-        transform: rotateX(-100deg);
-        transform-origin: top;
-    }
+.skills-list:nth-child(4) .skills-logo img,
+.skills-list:nth-child(5) .skills-logo img {
+    width: 8em;
 }
 
-@keyframes dasw-closenav {
-    0% {
-        opacity: 0;
-        /* transform: translateX(-250px) rotate(-200deg); */
-        transform: translateX(-250px);
-    }
-
-    100% {
-        opacity: 1;
-        /* transform: translateX(0) rotate(0deg); */
-        transform: translateX(0);
-    }
+.skills-logo i {
+    font-size: 1.5em;
 }
 
-@-webkit-keyframes dasw-closenav {
-    0% {
-        opacity: 0;
-        /* transform: translateX(-250px) rotate(-200deg); */
-        transform: translateX(-250px);
-    }
-
-    100% {
-        opacity: 1;
-        /* transform: translateX(0) rotate(0deg); */
-        transform: translateX(0);
-    }
+.skills-desc {
+    display: flex;
+    flex-direction: column;
 }
 
-@keyframes dasw-opennav {
-    0% {
-        animation-timing-function: ease-in;
-        opacity: 0;
-        transform: translateY(-250px);
-    }
-
-    38% {
-        animation-timing-function: ease-out;
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    55% {
-        animation-timing-function: ease-in;
-        transform: translateY(-65px);
-    }
-
-    72% {
-        animation-timing-function: ease-out;
-        transform: translateY(0);
-    }
-
-    81% {
-        animation-timing-function: ease-in;
-        transform: translateY(-28px);
-    }
-
-    90% {
-        animation-timing-function: ease-out;
-        transform: translateY(0);
-    }
-
-    95% {
-        animation-timing-function: ease-in;
-        transform: translateY(-8px);
-    }
-
-    100% {
-        animation-timing-function: ease-out;
-        transform: translateY(0);
-    }
+.skills-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
-@-webkit-keyframes dasw-opennav {
-    0% {
-        animation-timing-function: ease-in;
-        opacity: 0;
-        transform: translateY(-250px);
-    }
-
-    38% {
-        animation-timing-function: ease-out;
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    55% {
-        animation-timing-function: ease-in;
-        transform: translateY(-65px);
-    }
-
-    72% {
-        animation-timing-function: ease-out;
-        transform: translateY(0);
-    }
-
-    81% {
-        animation-timing-function: ease-in;
-        transform: translateY(-28px);
-    }
-
-    90% {
-        animation-timing-function: ease-out;
-        transform: translateY(0);
-    }
-
-    95% {
-        animation-timing-function: ease-in;
-        transform: translateY(-8px);
-    }
-
-    100% {
-        animation-timing-function: ease-out;
-        transform: translateY(0);
-    }
+.skills-desc p {
+    padding: 1em;
 }
 
-@keyframes dasw-ImgPrjAni {
-    0% {
-        transform: translateX(15px);
-    }
-
-    25% {
-        transform: translateX(-15px);
-    }
-
-    50% {
-        transform: translateX(15px);
-    }
-
-    75% {
-        transform: translateX(-15px);
-    }
-
-    100% {
-        transform: translateX(15px);
-    }
+.skills-title h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0.5em 0 0 0;
+    text-align: center;
 }
 
-/* -------------------------------------------------- */
-/* DASW RESPONSIVE BREAKDOWN */
-/* -------------------------------------------------- */
-@media screen and (max-width: 1920px) {}
-
-@media screen and (max-width: 1600px) {
-    .dasw-about-img {
-        width: 50%;
-    }
-
-    .dasw-about-text {
-        width: 30%;
-    }
-
-    /* DASW PROJECT HTML */
-    /* -------------------------------------------------- */
-    .dasw-prj-content img {
-        width: 30%;
-    }
-    /* -------------------------------------------------- */
-
-    /* DASW ABOUT HTML */
-    /* -------------------------------------------------- */
-    .about-section2-text p{
-        font-size: 25px;
-    }
-
-    .about-section4-text{
-        bottom: 72px;
-    }
-
-    .about-section4-text h1{
-        font-size: 35px;
-    }
-
-    .about-section4-text span{
-        font-size: 25px;
-    }
-
-    .about-section4-text address{
-        font-size: 15px;
-    }
-
-    #btt-about-btn{
-        width: 80px;
-        height: 80px;
-    }
-
-    #btt-about-btn i{
-        font-size: 35px;
-    }
-
-    #btt-about-btn span{
-        font-size: 20px;
-    }
-    /* -------------------------------------------------- */
-
+.skills-title span {
+    margin: 0.2em 0 0 0;
+    text-align: center;
 }
 
-@media screen and (max-width: 1440px) {
-    .dasw-about-img {
-        width: 50%;
-    }
+/* END OF SKILLS */
+/* ----------------------------- */
 
-    .dasw-about-text {
-        width: 30%;
-    }
+/* CERTIFIED */
+/* ----------------------------- */
 
-    .dasw-contact-img {
-        width: 40%
-    }
-
-    .dasw-contact-text {
-        width: 50%
-    }
-
-    /* DASW PROJECT HTML */
-    /* -------------------------------------------------- */
-
-    /* -------------------------------------------------- */
-
-    /* DASW ABOUT HTML */
-    /* -------------------------------------------------- */
-    .about-section2-text p{
-        font-size: 25px;
-    }
-    /* -------------------------------------------------- */
+.certified {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
-@media screen and (max-width: 1366px) {
-
-    /* DASW PROJECT HTML */
-    /* -------------------------------------------------- */
-
-    /* -------------------------------------------------- */
+.certified h1 {
+    margin-bottom: 0.3em;
+    font-size: 4em;
 }
 
-@media screen and (max-width: 1024px) {
-    .dasw-logo {
-        width: 30%;
-    }
-
-    .dasw-logo img {
-        width: 100%;
-    }
-
-    .dasw-menunav {
-        width: 70%;
-    }
-
-    .dasw-about-text p {
-        font-size: 18px;
-    }
-
-    .dasw-about-shape img {
-        width: 40%;
-        float: left
-    }
-
-    .dasw-footer {
-        background-image: url("../img/footer-bg-1024.svg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .dasw-footer-content {
-        background-color: rgba(9, 97, 155, 0.5);
-        color: #fff;
-    }
-
-    .dasw-footer-social i:nth-child(1),
-    .dasw-footer-social i:nth-child(2),
-    .dasw-footer-social i:nth-child(3),
-    .dasw-footer-social i:nth-child(4),
-    .dasw-footer-social i:nth-child(5),
-    .dasw-footer-social i:nth-child(6) {
-        color: #fff;
-    }
-
-    .dasw-footer-evenly {
-        width: 70%;
-    }
-
-    .dasw-contact-img {
-        width: 50%;
-    }
-
-    .dasw-contact-text {
-        width: 50%;
-    }
-
-    /* DASW PROJECT HTML */
-    /* -------------------------------------------------- */
-    .dasw-prj-logo {
-        width: 30%;
-    }
-
-    .dasw-prj-logo img {
-        width: 100%;
-    }
-
-    .dasw-prj-menunav {
-        width: 70%;
-    }
-
-    .dasw-text-overlay span {
-        width: 100%;
-        text-align: center;
-    }
-
-    .dasw-prj-text h1 {
-        font-size: 20px;
-    }
-
-    .dasw-prj-content img {
-        width: 40%;
-    }
-
-    .dasw-code-prj-img span {
-        width: 50%;
-        text-align: center;
-    }
-
-    .dasw-text-prj-content {
-        height: 80%;
-    }
-
-    /* -------------------------------------------------- */
-
-    /* DASW ABOUT HTML */
-    /* -------------------------------------------------- */
-    .about-section1-text h1{
-        font-size: 50px;
-    }
-
-    .about-section1-text span{
-        font-size: 30px;
-    }
-
-    .about-section2-img img:nth-child(1){
-        width: 35%;
-    }
-
-    .about-section2-img img:nth-child(2){
-        width: 50%;
-    }
-
-    .about-section2-text p{
-        font-size: 20px;
-    }
-
-    .about-section3-img{
-        margin: 10px 0;
-    }
-
-    .about-section3-hybrid{
-        width: 70%;
-        justify-content: center;
-    }
-
-    .about-section3-hybrid h1{
-        font-size: 25px;
-    }
-
-    .about-section3-img img{
-        width: 21%;
-    }
-
-    .about-section4-main{
-        flex-direction: column;
-    }
-
-    .about-section4 h1 {
-        text-align: center;
-        padding: 5px;
-    }
-
-    .about-section4-slider{
-        width: 95%;
-        height: 80vh;
-        padding: 0;
-    }
-
-    .about-section4-text{
-        bottom: 40px;
-    }
-
-    .about-section4-text h1{
-        text-align: left;
-        padding: 0;
-        font-size: 28px;
-    }
-
-    .about-section4-text span{
-        font-size: 20px;
-    }
-
-    .about-section4-text address{
-        font-size: 15px;
-    }
-
-    .slide-icon{
-        width: 20px;
-        margin: 20px 10px 0 10px;
-    }
-
-    #btt-back-home{
-        width: 20%;
-    }
-    /* -------------------------------------------------- */
+.certified-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    .dasw-logo {
-        width: 100%;
-        justify-content: flex-start;
-        padding: 0;
-    }
-
-    .dasw-logo img {
-        width: 50%;
-        padding: 10px;
-    }
-
-    .dasw-bars-btn {
-        width: 100%;
-    }
-
-    .dasw-menunav {
-        display: none;
-    }
-
-    .dasw-nav {
-        flex-direction: column;
-    }
-
-    .dasw-menunav-bars {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        animation: daswNavIn 1s ease 0s 1 normal forwards;
-    }
-
-    .dasw-menunav-bars a {
-        width: auto;
-        padding: 10px;
-        margin: 10px;
-        font-size: 25px;
-        text-decoration: none;
-        color: #000;
-        border: 1px solid black;
-    }
-
-    #dasw-open-bars {
-        display: flex;
-        font-size: 30px;
-        padding: 10px;
-        justify-content: flex-end;
-    }
-
-    .dasw-features-content {
-        margin: 0 5px;
-    }
-
-    .dasw-project-content img {
-        width: 90%;
-    }
-
-    .dasw-about {
-        padding: 0 10px;
-    }
-
-    .dasw-about-content {
-        flex-direction: column;
-    }
-
-    .dasw-about-text {
-        width: 100%;
-        order: 2;
-    }
-
-    .dasw-about-img {
-        width: 100%;
-        order: 1;
-    }
-
-    .dasw-about-img img {
-        border-bottom: 2px solid black;
-        padding: 0;
-    }
-
-    .dasw-contact-img {
-        display: none;
-    }
-
-    .dasw-contact-text {
-        width: 100%;
-        background-image: url("../img/contact-img.jpg");
-        background-position: center;
-        background-size: cover;
-        align-items: center;
-    }
-
-    .dasw-contact-text h2 {
-        background-color: rgba(110, 110, 110, 0.8);
-        width: 60%;
-        padding: 10px;
-    }
-
-    .dasw-footer-content img,
-    .dasw-footer-content p {
-        width: 60%;
-    }
-
-    .dasw-footer-evenly {
-        width: 80%;
-    }
-
-    /* DASW PROJECT HTML */
-    /* -------------------------------------------------- */
-
-    .dasw-prj-content img {
-        width: 50%;
-    }
-
-    .dasw-prj-text {
-        display: none;
-    }
-
-    .dasw-prj-menunav {
-        display: none;
-        flex-direction: row;
-        width: 100%;
-        padding: 0;
-        align-items: flex-start;
-    }
-
-    .dasw-prj-menunav a {
-        padding: 20px;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .dasw-prj-nav {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .dasw-prj-logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .dasw-prj-bars-btn {
-        display: flex;
-    }
-
-    .dasw-prj-logo img {
-        width: 50%;
-    }
-
-    #dasw-prj-bars {
-        font-size: 40px;
-    }
-
-    .dasw-text-overlay {
-        height: 65%;
-    }
-
-    .dasw-prj-img:hover .dasw-text-overlay {
-        height: 65%;
-    }
-
-    .dasw-text-overlay h1 {
-        font-size: 20px;
-    }
-
-    .dasw-text-overlay span {
-        font-size: 15px;
-    }
-
-    .dasw-code-prj-img span {
-        width: 60%;
-    }
-
-    /* -------------------------------------------------- */
-
-    /* DASW ABOUT HTML */
-    /* -------------------------------------------------- */
-    .about-section1{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .about-section1 img{
-        width: 45%;
-        padding: 10px 0;
-    }
-
-    .about-section1 h1{
-        margin: 0;
-    }
-
-    .about-section1-text{
-        width: 100%;
-    }
-
-    .about-section2{
-        justify-content: space-evenly;
-    }
-
-    .about-section4-slider{
-        height: 65vh;
-    }
-
-    .about-section4-text{
-        width: 100%;
-        padding: 10px 0 10px 10px;
-    }
-
-    #btt-back-home{
-        width: 27%;
-    }
-
-    #btt-back-home i{
-        font-size: 20px;
-    }
-
-    #btt-back-home span{
-        font-size: 20px;
-    }
-    /* -------------------------------------------------- */
+.certified-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20em;
+    height: 10em;
+    margin: 0.5em;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 1em;
 }
 
-@media screen and (max-width: 480px) {
-    .dasw-logo {
-        width: 100%;
-        padding: 0;
-    }
-
-    .dasw-logo img {
-        width: 50%;
-        padding: 10px;
-    }
-
-    .dasw-project-text h2 {
-        font-size: 40px;
-    }
-
-    .hidden-text {
-        display: none;
-    }
-
-    .dasw-topnav a {
-        font-size: 30px;
-    }
-
-    .dasw-features-content {
-        width: 40%;
-        margin: 5px;
-    }
-
-    .dasw-nav-sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        padding: 0;
-        background-color: #fff;
-    }
-
-    .dasw-contact-text h2 {
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .dasw-footer {
-        z-index: 2;
-    }
-
-    .dasw-footer-content img {
-        width: 100%;
-    }
-
-    /* DASW PROJECT HTML */
-    /* -------------------------------------------------- */
-    .dasw-code-prj-img span {
-        width: 50%;
-        font-size: 30px;
-        margin: 0;
-    }
-
-    .dasw-prj-img {
-        width: 45%;
-    }
-
-    .dasw-prj-menunav {
-        flex-direction: column;
-    }
-
-    .dasw-prj-menunav a {
-        text-align: left;
-        width: 90%;
-        border: 1px solid black;
-        padding: 10px;
-        margin: 5px auto;
-    }
-
-    .dasw-prj-topnav a {
-        font-size: 35px;
-    }
-
-    .dasw-prj-content img {
-        width: 70%;
-    }
-
-    .dasw-text-prj-content {
-        width: 82%;
-        height: 90%;
-    }
-
-    .dasw-text-prj-content img {
-        width: 100%;
-    }
-
-    .dasw-heading-close button {
-        width: 30%;
-    }
-
-    /* -------------------------------------------------- */
-
-    /* DASW ABOUT HTML */
-    /* -------------------------------------------------- */
-    .about-section1 img{
-        width: 80%;
-    }
-
-    .about-section2-img{
-        width: 100%;
-        height: 100%;
-    }
-
-    .about-section2-img img:nth-child(1){
-        width: 80%;
-        height: 90%
-    }
-
-    .about-section2-img img:nth-child(2){
-        display: none;
-    }
-
-    .about-section2-text p{
-        font-size: 14px;
-    }
-
-    .about-section3-hybrid{
-        width: 100%;
-        height: 100%;
-        padding: 0 10px;
-    }
-
-    .about-section4-slider{
-        height: 50vh;
-    }
-
-    .about-section4-text{
-        display: none;
-    }
-
-    #btt-back-home{
-        width: 32%;
-    }
-
-    #btt-back-home i{
-        font-size: 30px;
-    }
-    /* -------------------------------------------------- */
+.certified-img {
+    width: 10em;
 }
 
-@media screen and (max-width: 425px) {
-    .dasw-project-content {
-        flex-direction: column;
-    }
-
-    .dasw-project-text h2 {
-        font-size: 30px;
-    }
-
-    .dasw-topnav {
-        background-color: #000;
-        justify-content: center;
-    }
-
-    .dasw-topnav a i {
-        font-size: 30px;
-    }
-
-    .hidden-text {
-        display: none;
-    }
-
-    .dasw-topnav a:nth-child(1) i,
-    .dasw-topnav a:nth-child(2) i,
-    .dasw-topnav a:nth-child(3) i,
-    .dasw-topnav a:nth-child(4) i,
-    .dasw-topnav a:nth-child(5) i,
-    .dasw-topnav a:nth-child(6) i {
-        color: rgb(255, 255, 255);
-    }
-
-    #arrow-trans {
-        transition: 0.8s ease-out;
-    }
-
-    #arrow-transform:checked~label #arrow-trans {
-        transform: rotate(180deg);
-    }
-
-    .dasw-features-content {
-        width: 40%;
-        margin: 5px;
-    }
-
-    .dasw-features-content img,
-    .dasw-features-content:nth-child(1) img {
-        width: 100%;
-    }
-
-    .dasw-features-heading h1 {
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .dasw-project-content {
-        padding: 20px 0 0 0;
-    }
-
-    .dasw-project-img {
-        width: 100%;
-        padding: 0;
-    }
-
-    .dasw-project-text {
-        width: 100%;
-        padding: 20px 0 0 0;
-    }
-
-    .dasw-project-content:nth-child(2) .dasw-project-img {
-        order: 1;
-    }
-
-    .dasw-project-content:nth-child(2) .dasw-project-text {
-        order: 2;
-    }
-
-    .dasw-contact-heading h1 {
-        font-size: 40px;
-    }
-
-    .dasw-contact-text h2 {
-        width: 100%;
-        padding: 10px 0;
-        font-size: 25px;
-    }
-
-    .dasw-contact-text a {
-        width: 80%;
-        font-size: 30px;
-    }
-
-    .dasw-footer-content img {
-        width: 100%;
-    }
-
-    .dasw-footer-content p {
-        width: 100%;
-    }
-
-    .dasw-footer-evenly {
-        width: 100%;
-    }
-
-    .dasw-img-header {
-        flex-direction: column;
-    }
-
-    .dasw-img-header img:nth-child(1) {
-        order: 2;
-        width: 100%;
-    }
-
-    .dasw-img-header img:nth-child(2) {
-        order: 1;
-        width: 95%;
-    }
-
-    #btt-btn {
-        width: 70px;
-    }
-
-    #btt-btn i {
-        font-size: 30px;
-    }
-
-    #btt-btn span {
-        font-size: 20px;
-    }
-
-    /* DASW PROJECT HTML */
-    /* -------------------------------------------------- */
-    .dasw-prj-img {
-        width: 100%;
-    }
-
-    .dasw-text-overlay {
-        height: 50%;
-    }
-
-    .dasw-code-prj-img img {
-        width: 30%;
-    }
-
-    .dasw-code-prj-img span {
-        width: 65%;
-    }
-
-    /* -------------------------------------------------- */
-
-    /* DASW ABOUT HTML */
-    /* -------------------------------------------------- */
-    .about-section1 img{
-        width: 70%;
-    }
-
-    .about-section1-text h1{
-        font-size: 42px;
-    }
-
-    #btt-back-home{
-        width: 35%;
-    }
-    /* -------------------------------------------------- */
+.certified-img img {
+    width: 20em;
 }
 
-@media screen and (max-width: 375px) {
-    .dasw-contact-text a {
-        font-size: 25px;
-    }
-
-    /* DASW ABOUT HTML */
-    /* -------------------------------------------------- */
-    .about-section4-slider{
-        height: 35vh;
-    }
-
-    #btt-back-home{
-        width: 40%;
-    }
-    /* -------------------------------------------------- */
+.certified-list:nth-child(3) .certified-img img,
+.certified-list:nth-child(4) .certified-img img {
+    width: 6em
 }
 
-@media screen and (max-width: 320px) {
-    .dasw-menunav {
-        width: 80%;
-        justify-content: flex-start;
-    }
-
-    .dasw-menunav a {
-        font-size: 15px;
-    }
-
-    .dasw-features-content {
-        width: 100%;
-        margin: 5px 0 0 0;
-    }
-
-    .dasw-footer-evenly {
-        flex-wrap: wrap;
-    }
-
-    .dasw-footer-evenly strong {
-        margin: 10px 0 0 0;
-    }
-
-    .dasw-contact-text a {
-        font-size: 20px;
-    }
-
-    .dasw-contact-text h2 {
-        font-size: 20px;
-    }
-
-    #btt-btn {
-        width: 65px;
-        bottom: 5px;
-        right: 5px;
-    }
-
-    #btt-btn i {
-        font-size: 25px;
-    }
-
-    #btt-btn span {
-        font-size: 15px;
-    }
-
-    /* DASW PROJECT HTML */
-    /* -------------------------------------------------- */
-    .dasw-text-prj-content {
-        width: 75%;
-    }
-
-    .dasw-heading-close button,
-    .dasw-heading-close h1 {
-        font-size: 20px;
-    }
-
-    .dasw-text-overlay {
-        height: 65%;
-    }
-
-    .dasw-prj-topnav a {
-        font-size: 25px;
-    }
-
-    /* -------------------------------------------------- */
-
-    /* DASW ABOUT HTML */
-    /* -------------------------------------------------- */
-    .about-section1 img{
-        width: 95%;
-    }
-
-    .about-section1-text h1{
-        font-size: 35px;
-    }
-
-    .about-section2-img img:nth-child(1){
-        width: 90%;
-        height: 70%
-    }
-
-    .about-section2-text p{
-        font-size: 13px;
-    }
-
-    .about-section4-slider{
-        height: 30vh;
-    }
-
-    #btt-back-home{
-        width: 48%;
-    }
-    /* -------------------------------------------------- */
+.certified-desc h1 {
+    margin: 0.5em 0 0 0;
+    font-size: 1.5em;
+    color: #000;
 }
 
-/* -------------------------------------------------- */
+/* END OF CERTIFIED */
+/* ----------------------------- */
+
+/* CONTACT */
+/* ----------------------------- */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 2em 0;
+}
+
+.contact h1 {
+    margin: 0.5em 0 0 0;
+    font-size: 4em;
+}
+
+.contact span {
+    margin: 0 0 1em 0;
+    font-size: 2em;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.contact-img img {
+    width: 15em;
+}
+
+.contact-img h1 {
+    font-size: 2em;
+}
+
+.contact-desc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+.contact-desc a {
+    text-decoration: none;
+    padding: 1em;
+    margin: 0.5em;
+    color: #fff;
+}
+
+.contact-desc a:nth-child(1) {
+    background-color: #EB6383;
+}
+
+.contact-desc a:nth-child(2) {
+    background-color: #FA9191;
+}
+
+.contact-desc a:nth-child(3) {
+    background-color: #F35588;
+}
+
+.contact-desc a:nth-child(4) {
+    background-color: #FF616D;
+}
+
+.contact-desc a:nth-child(5) {
+    background-color: #66DE93;
+}
+
+/* END OF CONTACT */
+/* ----------------------------- */
+
+/* END OF DASW ABOUT CONTACT */
+/* ----------------------------- */
+/* END OF DASW CONTENT */
+/* ----------------------------- */
