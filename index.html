@@ -22,259 +22,435 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/fontawesome/css/brands.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Dimas Agil Satrio Wibowo</title>
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <title>DASW PROJECT - dimasagil_sw</title>
 </head>
 
 <body>
-    <div class="loading" id="load">
-        <img src="assets/img/logo/dasw-logo.png" alt="dasw-logo">
-        <span>Loading</span>
-        <progress></progress>
-    </div>
+    <!-- Preloader -->
+    <!-- <section id="preloader">
+        <img id="preload-logo" src="assets/img/logo/dasw-logo.png" alt="DASW PROJECT LOGO">
+        <span id="preload-span-1">
+            <h1>Loading</h1>
+            <img src="assets/img/loading.gif" alt="Loader Web">
+        </span>
+        <span id="preload-span-2">
+            <img id="preload-img-span-2" src="assets/img/dasw-photo-cartoon.png" alt="DASW Photo Cartoonizer">
+            <span>Hi, Everyone</span>
+            <h1>Welcome to ma' space</h1>
+        </span>
+        <span id="preload-span-3">
+            <img src="assets/img/logo/dasw-logo.png" alt="DASW PROJECT LOGO">
+            <h1>Let's Begin</h1>
+        </span>
+    </section> -->
+    <!-- End of Preloader -->
 
-    <!-- Back To Top Button -->
-    <button onclick="topFunction()" id="btt-btn" title="Back To Top">
-        <i class="fas fa-hand-point-up"></i>
-        <span>TOP</span>
-    </button>
-    <!-- End of Back To Top Button -->
-
-    <!-- HEADER SECTION -->
-    <header class="dasw-header">
-        <div class="dasw-topnav" data-aos="fade-down">
-            <a href="https://www.facebook.com/dimasagil.satriowibowo.3/" target="blank">
-                <i class="fab fa-facebook"></i>
-                <span class="hidden-text">Facebook</span>
-            </a>
-            <a href="https://twitter.com/DimasAgilSatrio" target="blank">
-                <i class="fab fa-twitter"></i>
-                <span class="hidden-text">Twitter</span>
-            </a>
-            <a href="">
-                <i class="fab fa-google"></i>
-                <span class="hidden-text">Google</span>
-            </a>
-            <a href="https://www.instagram.com/dimasagil_sw/" target="blank">
-                <i class="fab fa-instagram"></i>
-                <span class="hidden-text">Instagram</span>
-            </a>
-            <a href="https://www.linkedin.com/in/dimas-agil-satrio-wibowo-18a868198/" target="blank">
-                <i class="fab fa-linkedin"></i>
-                <span class="hidden-text">LinkedIn</span>
-            </a>
-            <a href="https://github.com/projectdasw" target="blank">
-                <i class="fab fa-github"></i>
-                <span class="hidden-text">GitHub</span>
-            </a>
-        </div>
-        <nav class="dasw-nav" id="nav">
-            <div class="dasw-logo">
-                <img src="assets/img/logo/dasw-brandname.png" alt="dasw-brandname">
-                <div class="dasw-bars-btn">
-                    <a id="dasw-open-bars" onclick="dasw_opennav()">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                    <a id="dasw-close-bars" onclick="dasw_closenav()">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="dasw-menunav" id="nav-menu">
-                <a href="https://projectdasw.github.io/dasw-porto/">
-                    <i class="fas fa-home"></i>
-                    Home
-                </a>
-                <a href="https://projectdasw.github.io/dasw-porto/project/">
-                    <i class="fas fa-project-diagram"></i>
-                    Project
-                </a>
-                <a href="https://projectdasw.github.io/dasw-porto/about/">
-                    <i class="fas fa-id-badge"></i>
-                    About Me
-                </a>
-                <a href="https://projectdasw.github.io/dasw-porto/#contact">
-                    <i class="fas fa-address-card"></i>
-                    Contact
-                </a>
-            </div>
+    <!-- Header Section-->
+    <section id="dasw-header">
+        <header id="dasw-brand">
+            <img src="assets/img/logo/dasw-logo.png" alt="DASW PROJECT LOGO">
+            <span class="brand-name">
+                <strong>DASW PROJECT</strong>
+                <span>
+                    Web Developer | Media Broadcast
+                </span>
+            </span>
+        </header>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Project</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </nav>
-        <div class="dasw-img-header">
-            <img src="assets/img/main-photo2-1.png" alt="main-photo2-1">
-            <img src="assets/img/logo/dasw-webbanner.png" alt="dasw-webbanner">
+        <div class="social-media">
+            <span>Keep In Touch</span>
+            <ul>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+            </ul>
         </div>
-    </header>
-    <!-- END OF HEADER SECTION -->
+    </section>
+    <!-- End of Header Section-->
 
-    <section class="dasw-features">
-        <div class="dasw-features-heading">
-            <h1>Featured Skills</h1>
-            <!-- <span>dimasagil_sw</span> -->
+    <!-- Content Section -->
+    <section id="dasw-content">
+        <div id="dasw-hi">
+            <h1>Hi,<br>
+                I'am <span>dimasagil_sw</span><br>
+                <p>Just ordinary people who have coding skills</p>
+                <p>WEB DEVELOPER / MEDIA BROADCAST</p>
+            </h1>
+            <img src="assets/img/eat-sleep-code-repeat.png" alt="">
+            <a href="" class="slide-button">
+                <i class="fa-solid fa-arrow-down"></i>
+                Slide Down
+            </a>
         </div>
-        <div class="dasw-main-features">
-            <div class="dasw-features-content">
-                <img src="assets/img/logo/dasw-code.png" alt="dasw-code">
-                <div class="dasw-features-text">
-                    <h2>Website Developer</h2>
+        <div id="dasw-project">
+            <h1>Projects</h1>
+            <div class="project-list">
+                <div class="card">
+                    <img class="card-img" src="project/esac-inventory-book-apps/logo-um.png" alt="Logo UM">
+                    <div class="card-title">
+                        <h3>ESAC Inventory Book Apps</h3>
+                        <span>Google Spreadsheet</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="desc">
+                            ESAC Inventory Book Apps is an MS Office-based app. ESAC Inventory Book Apps has been
+                            built-in with Google Spreadsheet integrated with Google Apps Script.
+                            <br />
+                            <br />
+                            Click button below for more specific of apps information.
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <a href="">Read More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="dasw-features-content">
-                <img src="assets/img/logo/dasw-vs.png" alt="dasw-vs">
-                <div class="dasw-features-text">
-                    <h2>Desktop Apps Developer</h2>
+                <div class="card">
+                    <img class="card-img" src="project/gereja-katolik-paroki-st-albertus-de-trapani/logo-website.png"
+                        alt="Logo Gereja Katolik Paroki St. Albertus de Trapani">
+                    <div class="card-title">
+                        <h3>Gereja Katolik Paroki St. Albertus de Trapani</h3>
+                        <span>WordPress</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="desc">
+                            Gereja Katolik Paroki St. Albertus de Trapani is an official church website. This website
+                            has been built-in with WordPress and this website has been indexed in Google Search.
+                            <br />
+                            <br />
+                            Click button below for more specific of apps information.
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <a href="">Read More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="dasw-features-content">
-                <img src="assets/img/logo/dasw-office.png" alt="dasw-office">
-                <div class="dasw-features-text">
-                    <h2>Microsoft Office</h2>
+                <div class="card">
+                    <img class="card-img" src="project/kebun-sayur-hidroponik-brayat-minulyo/kebun_newlogo.png"
+                        alt="Logo Kebun Sayur Hidroponik Brayat Minulyo">
+                    <div class="card-title">
+                        <h3>Kebun Sayur Hidroponik Brayat Minulyo</h3>
+                        <span>WordPress, WooCommerce</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="desc">
+                            Kebun Sayur Hidroponik Brayat Minulyo is an e-commerce platform that sells vegetables using
+                            hydroponic. Besides selling vegetables, they also have services for the community &
+                            apprenticeship programs for students in the fields of plantations and agriculture.
+                            <br />
+                            <br />
+                            Click button below for more specific of apps information.
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <a href="">Read More</a>
+                    </div>
                 </div>
-            </div>
-            <div class="dasw-features-content">
-                <img src="assets/img/logo/dasw-design.png" alt="dasw-design">
-                <div class="dasw-features-text">
-                    <h2>Graphic Design</h2>
+                <div class="card">
+                    <img class="card-img" src="project/keuskupan-malang/logo-keuskupan.png" alt="Logo Keuskupan Malang">
+                    <div class="card-title">
+                        <h3>Keuskupan Malang</h3>
+                        <span>WordPress</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="desc">
+                            The Diocese of Malang is suffragan in the Ecclesiastical Province of the Archdiocese of
+                            Semarang. This website is the official website of the Diocese of Malang. This website
+                            has been built-in with WordPress and this website has been indexed in Google Search.
+                            <br />
+                            <br />
+                            Click button below for more specific of apps information.
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="project/kompatise-komik-matematika/logo-um.png" alt="Logo UM">
+                    <div class="card-title">
+                        <h3>Komik Pembelajaran Matematika</h3>
+                        <span>WordPress Free Version (WordPress.org)</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="desc">
+                            Komik Pembelajaran Matematika is an E-Learning website using comics as a medium of
+                            interaction. This website has been built-in WordPress.org, a free version of WordPress.
+                            <br />
+                            <br />
+                            Click button below for more specific of apps information.
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="project/kunci-ibadah-utama/kunci-ibadah-utama.png"
+                        alt="Logo Kunci Ibadah Utama">
+                    <div class="card-title">
+                        <h3>Kunci Ibadah Utama</h3>
+                        <span>Visual Basic 6, Excel</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="desc">
+                            Kunci Ibadah Utama is a Retail app for manufacturing vendors. This app has been built-in
+                            with Visual Basic 6 & Excel for accounting.
+                            <br />
+                            <br />
+                            Click button below for more specific of apps information.
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="project/mc-titi-swasti/mc-titi-swasti.png" alt="MC TITI SWASTI">
+                    <div class="card-title">
+                        <h3>MC TITI SWASTI</h3>
+                        <span>WordPress</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="desc">
+                            MC TITI SWASTI is a personal website for her carrier as a Master of Ceremony. This website
+                            is a simple brand web design. The website content includes curriculum vitae, experience,
+                            personal data, etc.
+                            <br />
+                            <br />
+                            Click button below for more specific of apps information.
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="project/seminari-marianum/seminarimarianum-logo.png"
+                        alt="Logo Seminari Marianum Probolinggo">
+                    <div class="card-title">
+                        <h3>Seminari Marianum Probolinggo</h3>
+                        <span>WordPress</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="desc">
+                            Seminarium Marianum is a place for the education of mid-level priest candidates in the
+                            Diocese of Malang which has a long history. It is from this Marianum Seminarium that many
+                            priests, both Diocesan priests and Ordo/congregations. This website has been built-in with
+                            WordPress.
+                            <br />
+                            <br />
+                            Click button below for more specific of apps information.
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <a href="">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="dasw-project">
-        <div class="dasw-project-heading">
-            <h1>Project</h1>
-            <!-- <span>dimasagil_sw</span> -->
-        </div>
-        <div class="dasw-bg-img">
-            <div class="dasw-main-project">
-                <div class="dasw-project-content" data-aos="fade-right">
-                    <div class="dasw-project-img">
-                        <img src="assets/img/logo/dasw-codebox.png" alt="dasw-codebox">
-                    </div>
-                    <div class="dasw-project-text">
-                        <h2>Website Development</h2>
-                        <span>(Web Design, Web Application, Wordpress)</span>
-                        <button class="dasw-project-button">
-                            Read More <i class="fas fa-angle-double-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="dasw-project-content" data-aos="fade-left">
-                    <div class="dasw-project-img">
-                        <img src="assets/img/logo/dasw-desktop.png" alt="dasw-desktop">
-                    </div>
-                    <div class="dasw-project-text">
-                        <h2>Apps Development</h2>
-                        <span>(Desktop Apps, Retail Apps)</span>
-                        <button class="dasw-project-button">
-                            Read More <i class="fas fa-angle-double-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="dasw-project-content" data-aos="fade-right">
-                    <div class="dasw-project-img">
-                        <img src="assets/img/logo/dasw-abstract.png" alt="dasw-abstract">
-                    </div>
-                    <div class="dasw-project-text">
-                        <h2>Graphic Design</h2>
-                        <span>(Logo Design, Clipart Design, Brand Design, Catalog Design)</span>
-                        <button class="dasw-project-button">
-                            Read More <i class="fas fa-angle-double-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="dasw-about">
-        <div class="dasw-about-heading">
-            <h1>About Me</h1>
-        </div>
-        <div class="dasw-about-content">
-            <div class="dasw-about-img">
-                <img src="assets/img/photo-cartoonizer.png" alt="photo-cartoonizer" data-aos="fade-left">
-            </div>
-            <div class="dasw-about-text" data-aos="fade-right">
-                <!-- <img src="assets/img/logo/dasw-webbanner.png" alt="dasw-webbanner"> -->
-                <h1>Hi, I'am Dimas</h1>
+        <div class="dasw-about-contact">
+            <div class="about-contact">
+                <!-- ABOUT ME -->
+                <h1 class="about">About</h1>
+                <h2>DIMAS AGIL SATRIO WIBOWO</h2>
                 <p>
-                    I'am a Website Developer and Graphic Designer
-                    who was born in Indonesia. I currently live in
-                    Malang, famously called the city of Education.
-                </p>
-                <p>
-                    I love hiking, travel to a place where I can feel peace,
-                    imagination, relax and something can make me create as
-                    many ideas as possible.
-                </p>
-                <p>
-                    When I'am not write code or designing, you can find me
-                    watching YouTube, gaming, read memes for funny, playing guitar,
+                    I'am a Website Developer and Graphic Designer who was born in Indonesia, currently live in Malang,
+                    famously called the city of Education. I love hiking, travel to a place where I can feel peace,
+                    imagination, relax and something can make me create as many ideas as possible. When I'am not write
+                    code or designing, you can find me watching YouTube, gaming, read memes for funny, playing guitar,
                     filling up with coffe and smoke at coffeshop or home.
                 </p>
+                <!-- END OF ABOUT ME -->
+
+                <!-- SKILLS -->
+                <div class="skills">
+                    <h1>Skills</h1>
+                    <div class="skills-container">
+                        <div class="skills-list">
+                            <div class="skills-logo">
+                                <img src="assets/img/logo/dasw-broadcast.png" alt="Media Broadcast Skill">
+                            </div>
+                            <div class="skills-desc">
+                                <div class="skills-title">
+                                    <h1>Media Broadcast</h1>
+                                    <span>Multimedia, Broadcast, Mixing Console</span>
+                                </div>
+                                <p>
+                                    Currently, I have a new skill, namely Media Broadcast. Learning multimedia based on
+                                    Live Stream Platforms such as YouTube, Zoom, and Instagram Live, Multi-Platform Live
+                                    Streams such as Zoom integrated with YouTube and Instagram.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skills-logo">
+                                <img src="assets/img/logo/dasw-codebox.png" alt="Web Development Skill">
+                            </div>
+                            <div class="skills-desc">
+                                <div class="skills-title">
+                                    <h1>Web Development</h1>
+                                    <span>WordPress Developer, Native Web Apps</span>
+                                </div>
+                                <p>
+                                    The website is a universal application that can access on various Smartphones,
+                                    Tablets, and Desktop devices. I can make websites that are very responsive according
+                                    to user needs. Apart from that, I can also create framework-based websites like
+                                    WordPress from scratch and can maximize WordPress plugins or source code.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skills-logo">
+                                <img src="assets/img/logo/dasw-desktop.png" alt="Desktop Apps Skill">
+                                <!-- <i class="fa-solid fa-house"></i> -->
+                            </div>
+                            <div class="skills-desc">
+                                <div class="skills-title">
+                                    <h1>Desktop Apps</h1>
+                                    <span>Visual Studio, Visual Basic 6</span>
+                                </div>
+                                <p>
+                                    I can create desktop applications to answer the needs of the retail and warehouse
+                                    market. Desktop applications also are designed to answer
+                                    calculation of supply needs & accountants that make performance faster & more
+                                    responsive.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skills-logo">
+                                <img src="assets/img/logo/dasw-office.png" alt="MS Office Skill">
+                                <!-- <i class="fa-solid fa-house"></i> -->
+                            </div>
+                            <div class="skills-desc">
+                                <div class="skills-title">
+                                    <h1>MS Office based Apps</h1>
+                                    <span>Access, Google Spreadsheet, Google Apps Script</span>
+                                </div>
+                                <p>
+                                    Utilizing Microsoft Office is also a platform to create applications. Such as
+                                    Access, Excel, or using G-suite has Google Docs & Spreadsheets. I can make
+                                    applications based on Microsoft Office or G-Suite. Integrating with Google Apps
+                                    Script makes applications much easier & can be remotely anywhere.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skills-logo">
+                                <img src="assets/img/logo/dasw-design.png" alt="Graphic Design Skill">
+                                <!-- <i class="fa-solid fa-house"></i> -->
+                            </div>
+                            <div class="skills-desc">
+                                <div class="skills-title">
+                                    <h1>Graphic Design</h1>
+                                    <span>CorelDraw, Canva</span>
+                                </div>
+                                <p>
+                                    I also design graphics in the manufacture of sales product catalogs, icon packs for
+                                    web platforms and desktop applications, Posters, Banners, Brochures, mock-ups for
+                                    web & desktop application flow design.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF SKILLS -->
+
+                <!-- CERTIFIED -->
+                <div class="certified">
+                    <h1>Certified</h1>
+                    <div class="certified-container">
+                        <div class="certified-list">
+                            <div class="certified-img">
+                                <img src="assets/img/logo/bnsp.png" alt="Logo Badan Nasional Sertifikasi Profesi">
+                            </div>
+                            <div class="certified-desc">
+                                <h1>Badan Nasional Sertifikasi Profesi</h1>
+                            </div>
+                        </div>
+                        <div class="certified-list">
+                            <div class="certified-img">
+                                <img src="assets/img/logo/cv-multimedia.png" alt="Logo CV CUSTOM MULTIMEDIA">
+                            </div>
+                            <div class="certified-desc">
+                                <h1>CV. Custom Multimedia</h1>
+                            </div>
+                        </div>
+                        <div class="certified-list">
+                            <div class="certified-img">
+                                <img src="assets/img/logo/kominfo.png" alt="Logo Kementerian Komunikasi dan Informasi">
+                            </div>
+                            <div class="certified-desc">
+                                <h1>Kementerian Komunikasi dan Informasi</h1>
+                            </div>
+                        </div>
+                        <div class="certified-list">
+                            <div class="certified-img">
+                                <img src="assets/img/logo/digitalent.png" alt="Logo Digital Talent Scholarship">
+                            </div>
+                            <div class="certified-desc">
+                                <h1>Digital Talent Scholarship</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CERTIFIED -->
+
+                <!-- CONTACT -->
+                <div class="contact">
+                    <h1>Contact me</h1>
+                    <span>I'll treat your coffe</span>
+                    <div class="contact-container">
+                        <div class="contact-img">
+                            <img src="assets/img/logo/dasw-logo.png" alt="DASW PROJECT LOGO">
+                            <h1>DASW PROJECT</h1>
+                        </div>
+                        <div class="contact-desc">
+                            <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=dimasagilsw@gmail.com"
+                                target="_blank">
+                                Email : <br />
+                                dimasagilsw@gmail.com
+                            </a>
+                            <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=project.dasw@gmail.com"
+                                target="_blank">
+                                Email : <br />
+                                project.dasw@gmail.com
+                            </a>
+                            <a href="https://www.instagram.com/dimasagil_sw/" target="_blank">
+                                Instagram : <br />
+                                @dimasagil_sw
+                            </a>
+                            <a href="https://www.instagram.com/dasw_project/" target="_blank">
+                                Instagram : <br />
+                                @dasw_project
+                            </a>
+                            <a href="https://wa.me/+6285812408380" target="_blank">
+                                WhatsApp : <br />
+                                085812408380
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CONTACT -->
+            </div>
+            <div class="photo-profile">
+                <img src="assets/img/dasw-new.png" alt="DASW Profile Photo">
             </div>
         </div>
     </section>
-    <section class="dasw-contact" id="contact">
-        <div class="dasw-contact-heading">
-            <h1>Contact Me</h1>
-        </div>
-        <div class="dasw-contact-content">
-            <div class="dasw-contact-img">
-                <img src="assets/img/contact-img.jpg" alt="contact-img">
-            </div>
-            <div class="dasw-contact-text">
-                <h2>Have question or comments?<br /> Bussiness?</h2>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=project.dasw@gmail.com&su=SUBJECT&body=Hai%2C%20I%20want%20talk%20to%20you%20about%20business"
-                    target="blank">
-                    <i class="far fa-envelope"></i> Send me your Email
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=6285812408380&text=Hai%2C%20saya%20tertarik%20untuk%20berbisnis%20dengan%20anda"
-                    target="blank">
-                    <i class="fab fa-whatsapp"></i> Chat via WhatsApp
-                </a>
-            </div>
-        </div>
-    </section>
-    <footer class="dasw-footer">
-        <div class="dasw-footer-content" data-aos="zoom-in">
-            <img src="assets/img/logo/dasw-webbanner.png" alt="dasw-webbanner">
-            <p>
-                DimasAgil_SW is a container of my project and also a Personal Brand.
-                In DimasAgil_SW, there are many projects that I have made.
-                Such as Web Development, Desktop Apps, Microsoft Office based applications,
-                Graphic Design like logo or brand etc. Let's collaborate with me.
-            </p>
-            <div class="dasw-footer-evenly">
-                <strong>Web Developer</strong>
-                <strong>Microsoft Office</strong>
-                <strong>Desktop Apps</strong>
-                <strong>Graphic Design</strong>
-            </div>
-            <div class="dasw-footer-social">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-google"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-linkedin"></i>
-                <i class="fab fa-github"></i>
-            </div>
-            <div class="dasw-copyright">
-                &copy;2021. DimasAgil_SW.
-            </div>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="assets/js/dasw-index.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <!-- End of Content Section -->
 </body>
+<script src="assets/js/script.js"></script>
 
 </html>
