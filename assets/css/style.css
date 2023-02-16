@@ -384,7 +384,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1600px) {
+@media only screen and (min-device-width: 1600px) {
     /* PRELOADER */
     /* ----------------------------- */
 
@@ -1036,4 +1036,12 @@ body {
     /* ----------------------------- */
     /* END OF DASW CONTENT */
     /* ----------------------------- */
+}
+
+@media only screen and (min-device-width: 1680px) {
+    /* insert styles here */
+}
+
+@media only screen and (max-width: 1920px) {
+    /* insert styles here */
 }
