@@ -1,0 +1,554 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    body {
+        flex-direction: column;
+    }
+
+    #dasw-header {
+        display: none;
+    }
+
+    #dasw-content {
+        width: auto;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1280px) {
+    .photo-profile {
+        display: none;
+    }
+
+    .card-body {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1280px) {
+    #dasw-header {
+        display: flex;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #dasw-hi h1 {
+        font-size: 2.5em;
+    }
+
+    #dasw-hi h1 span {
+        font-size: 42px;
+    }
+
+    #dasw-hi img {
+        margin: 3em 0;
+        width: 100%;
+    }
+
+    .dasw-about-contact {
+        margin: 5em 0 0 0;
+        flex-direction: column;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .certified-list {
+        width: 75%;
+        height: 100%;
+        margin: 0.2em;
+    }
+
+    .certified-list:nth-child(3) .certified-img img,
+    .certified-list:nth-child(4) .certified-img img {
+        width: 30%;
+    }
+
+    .certified-img {
+        width: 80%;
+    }
+
+    .certified-img img {
+        width: 10em;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+
+    .card-body {
+        height: 100%;
+    }
+
+    #dasw-project h1 {
+        margin: 0 0 0.3em 0;
+    }
+
+    .photo-profile {
+        display: none;
+    }
+
+    .skills-logo {
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    .skills-list {
+        width: 100%;
+        height: 100%;
+        margin: 0.5em 0;
+        padding: 0.5em;
+    }
+
+    .certified-list {
+        width: 100%;
+    }
+
+    .contact {
+        margin: 7em 0 0 0;
+        text-align: center;
+    }
+
+    .contact h1 {
+        font-size: 3em;
+    }
+
+    .contact-img {
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+
+    .contact-img img {
+        width: 50%;
+    }
+
+    .contact-desc a {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 640px) {
+    #dasw-hi img {
+        width: 90%;
+    }
+
+    #dasw-hi h1 span {
+        font-size: 1em;
+    }
+
+    .project-list {
+        justify-content: center;
+    }
+
+    .card {
+        width: 40%;
+        margin: 0 0.2em 0.2em 0;
+    }
+
+    .card-body {
+        height: 100%;
+    }
+
+    .card:nth-child(6) .card-img {
+        width: 100%;
+    }
+
+    .dasw-about-contact {
+        margin: 5em 0 0 0;
+    }
+
+    .skills-container {
+        justify-content: center;
+    }
+
+    .skills-logo {
+        padding: 1em 0 0 0;
+    }
+
+    .skills-logo img {
+        width: 15em;
+        height: 90%;
+    }
+
+    .skills-list {
+        width: 75%;
+        height: 100%;
+        margin: 0.5em 0;
+        padding: 1em;
+    }
+
+    .skills-list:nth-child(4) .skills-logo img,
+    .skills-list:nth-child(5) .skills-logo img {
+        width: 10em;
+    }
+
+    .certified-container {
+        justify-content: center;
+    }
+
+    .certified-list {
+        width: 75%;
+        height: 100%;
+        margin: 0.2em;
+    }
+
+    .certified-list:nth-child(3) .certified-img img,
+    .certified-list:nth-child(4) .certified-img img {
+        width: 30%;
+    }
+
+    .contact-img {
+        width: 50%;
+    }
+
+    .contact-img img {
+        width: 80%;
+    }
+
+    .contact-desc {
+        width: 50%;
+    }
+
+    .contact-desc a {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 641px) and (max-device-width: 768px) {
+    #dasw-hi img {
+        width: 80%;
+    }
+
+    #dasw-hi h1 span {
+        font-size: 1em;
+    }
+
+    .project-list {
+        justify-content: center;
+    }
+
+    .card {
+        width: 42%;
+        margin: 0 0.5em 0.5em 0;
+    }
+
+    .dasw-about-contact {
+        margin: 5em 0 0 0;
+    }
+
+    .skills-container {
+        justify-content: center;
+    }
+
+    .skills-list {
+        width: 45%;
+        height: 28em;
+        margin: 0.2em;
+        padding: 0.6em;
+    }
+
+    .skills-list:nth-child(4) .skills-logo img {
+        width: 7em;
+    }
+
+    .certified-list {
+        width: 38%;
+    }
+
+    .contact-img {
+        width: 50%;
+    }
+
+    .contact-desc {
+        width: 50%;
+    }
+
+    .contact-desc a {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+    body {
+        flex-direction: row;
+    }
+
+    #dasw-content {
+        width: 70%;
+    }
+
+    #dasw-hi h1 span {
+        font-size: 1em;
+    }
+
+    #dasw-hi img {
+        width: 30em;
+        margin: 2.5em 0;
+    }
+
+    #dasw-project {
+        margin: 0 0 5em 0;
+    }
+
+    .card {
+        width: 40%;
+        height: 100%;
+        margin: 0 0.5em 0.5em 0;
+    }
+
+    .card-img {
+        width: 50%;
+    }
+
+    .card:nth-child(6) .card-img {
+        width: 100%;
+    }
+
+    .skills-list {
+        height: 28em;
+        padding: 0.5em;
+        margin: 0.2em;
+    }
+
+    .skills-title h1 {
+        font-size: 1.5em;
+    }
+
+    .skills-logo {
+        height: auto;
+    }
+
+    .skills-logo img {
+        width: 70%;
+    }
+
+    .skills-list:nth-child(4) .skills-logo img {
+        width: 7em;
+    }
+
+    .certified-list {
+        width: 35%;
+    }
+
+    .contact-img {
+        width: 50%;
+    }
+
+    .contact-desc {
+        width: 50%;
+    }
+
+    .contact-desc a {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+    #dasw-hi img {
+        width: 65%;
+        margin: 2.1em 0;
+    }
+
+    .project-list {
+        justify-content: flex-start;
+    }
+
+    .card {
+        width: 28%;
+        margin: 0 0.2em 0.2em 0;
+    }
+
+    .card:nth-child(6) .card-img {
+        width: 100%;
+    }
+
+    .skills-list {
+        height: 28em;
+        margin: 0.2em;
+        padding: 0.8em;
+    }
+
+    .certified-list {
+        width: 35%;
+    }
+
+    .contact-img {
+        width: 50%;
+    }
+
+    .contact-img img {
+        width: 70%;
+    }
+
+    .contact-desc a {
+        width: 42%;
+        margin: 0.2em;
+    }
+
+    .dasw-about-contact {
+        margin: 5em 0 0 0;
+    }
+}
+
+@media only screen and (min-device-width: 1281px) and (max-device-width: 1366px) {
+    #dasw-hi img {
+        width: 50%;
+        margin: 2.1em 0;
+    }
+
+    .photo-profile img {
+        width: 18em;
+        height: 38em;
+    }
+
+    .card {
+        margin: 0 0.2em 0.2em 0;
+    }
+
+    .dasw-about-contact {
+        margin: 5em 0 0 0;
+    }
+
+    .skills-list {
+        height: 30em;
+    }
+
+    .certified-list {
+        width: 35%;
+    }
+
+    .contact-img {
+        width: 50%;
+    }
+
+    .contact-desc {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-device-width: 1367px) and (max-device-width: 1440px) {
+    #dasw-hi img {
+        width: 50%;
+        margin: 2em 0;
+    }
+
+    .card {
+        width: 29.5%;
+        margin: 0 0.2em 0.2em 0;
+    }
+
+    .dasw-about-contact {
+        flex-direction: row;
+        margin: 5em 0 0 0;
+    }
+
+    .about-contact {
+        width: 100%;
+    }
+
+    .photo-profile {
+        display: flex;
+    }
+
+    .photo-profile img {
+        width: 18em;
+        height: 38em;
+    }
+
+    .skills-list {
+        height: 26em;
+        margin: 0 0.2em 0.2em 0;
+        padding: 1em;
+    }
+
+    .certified-list {
+        width: 30%;
+        height: 5em;
+    }
+
+    .contact-img {
+        width: 30%;
+    }
+
+    .contact-img img {
+        width: 100%;
+    }
+
+    .contact-img h1 {
+        font-size: 2em;
+    }
+
+    .contact-desc {
+        width: 70%;
+    }
+
+    .contact-desc a {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-device-width: 1441px) and (max-device-width: 1599px) {
+    #dasw-hi img {
+        width: 50%;
+        margin: 2em 0;
+    }
+
+    .card {
+        width: 29.5%;
+        margin: 0 0.2em 0.2em 0;
+    }
+
+    .dasw-about-contact {
+        flex-direction: row;
+        margin: 5em 0 0 0;
+    }
+
+    .about-contact {
+        width: 100%;
+    }
+
+    .photo-profile {
+        display: flex;
+    }
+
+    .photo-profile img {
+        width: 18em;
+        height: 38em;
+    }
+
+    .skills-list {
+        height: 26em;
+        margin: 0 0.2em 0.2em 0;
+        padding: 1em;
+    }
+
+    .certified-list {
+        width: 30%;
+        height: 5em;
+    }
+
+    .contact-img {
+        width: 30%;
+    }
+
+    .contact-img img {
+        width: 100%;
+    }
+
+    .contact-img h1 {
+        font-size: 2em;
+    }
+
+    .contact-desc {
+        width: 70%;
+    }
+
+    .contact-desc a {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-device-width: 1681px) and (max-device-width: 2560px) {}

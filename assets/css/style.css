@@ -80,968 +80,656 @@ body {
 /* END OF ANIMATION */
 /* ----------------------------- */
 
+/* PRELOADER */
+/* ----------------------------- */
 
-@media only screen and (min-device-width: 320px) {
-    body {
-        flex-direction: column;
-    }
-
-    #dasw-header {
-        display: none;
-    }
-
-    #dasw-content {
-        width: auto;
-        padding: 10px;
-    }
-
-    #dasw-hi h1 {
-        font-size: 2.5em;
-    }
-
-    #dasw-hi h1 span {
-        font-size: 42px;
-    }
-
-    #dasw-hi img {
-        margin: 3em 0;
-        width: 100%;
-    }
-
-    .dasw-about-contact {
-        margin: 7em 0 0 0;
-        flex-direction: column;
-    }
-
-    .contact-container {
-        flex-direction: column;
-    }
-
-    .certified-img {
-        width: 80%;
-    }
-
-    .certified-img img {
-        width: 100%;
-    }
-
-    .card {
-        margin: 0 0 1em 0;
-        width: 100%;
-    }
-
-    .card-body {
-        height: 100%;
-    }
-
-    #dasw-project h1 {
-        margin: 0 0 0.3em 0;
-    }
-
-    .photo-profile {
-        display: none;
-    }
-
-    .skills-logo {
-        justify-content: flex-start;
-        height: auto;
-    }
-
-    .skills-list {
-        width: 100%;
-        height: 100%;
-        margin: 0.5em 0;
-        padding: 0.5em;
-    }
-
-    .certified-list {
-        width: 100%;
-    }
-
-    .contact {
-        margin: 7em 0 0 0;
-        text-align: center;
-    }
-
-    .contact h1 {
-        font-size: 3em;
-    }
-
-    .contact-img {
-        width: 100%;
-        margin: 0 0 1em 0;
-    }
-
-    .contact-img img {
-        width: 50%;
-    }
-
-    .contact-desc a {
-        border-radius: 10px;
-        width: 100%;
-    }
+#preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
-@media only screen and (min-device-width: 480px) {
-    #dasw-content {
-        width: auto;
-        padding: 0 1em;
-    }
-
-    #dasw-hi img {
-        width: 90%;
-    }
-
-    #dasw-hi h1 span {
-        font-size: 1em;
-    }
-
-    .project-list {
-        justify-content: center;
-    }
-
-    .card {
-        width: 100%;
-        margin: 0 0.5em 0.5em 0;
-    }
-
-    .dasw-about-contact {
-        margin: 7em 0 0 0;
-    }
-
-    .contact-img {
-        width: 50%;
-    }
-
-    .contact-img img {
-        width: 80%;
-    }
-
-    .contact-desc {
-        width: 50%;
-    }
-
-    .contact-desc a {
-        width: 100%;
-        border-radius: 10px;
-    }
+#preloader img {
+    width: 250px;
+    height: 250px;
 }
 
-@media only screen and (min-device-width: 640px) {
-    .card {
-        width: 42%;
-    }
-
-    .card:nth-child(6) .card-img {
-        width: 14em;
-    }
-
-    .skills-list {
-        width: 45%;
-        height: 28em;
-        margin: 0.2em;
-    }
-
-    .certified-list {
-        width: 35%;
-    }
-
-    .contact-container {
-        flex-direction: row;
-    }
-
-    .contact-img img {
-        width: 65%;
-    }
-
-    .contact-img h1 {
-        font-size: 2.2em;
-    }
+#preload-span-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-@media only screen and (min-device-width: 768px) {
-    #dasw-hi img {
-        width: 80%;
-    }
-
-    #dasw-hi h1 span {
-        font-size: 1em;
-    }
-
-    .project-list {
-        justify-content: center;
-    }
-
-    .card {
-        width: 42%;
-        margin: 0 0.5em 0.5em 0;
-    }
-
-    .dasw-about-contact {
-        margin: 7em 0 0 0;
-    }
-
-    .skills-list {
-        width: 45%;
-        height: 28em;
-        margin: 0.2em;
-    }
-
-    .certified-list {
-        width: 38%;
-    }
-
-    .contact-img {
-        width: 50%;
-    }
-
-    .contact-desc {
-        width: 50%;
-    }
-
-    .contact-desc a {
-        width: 100%;
-        border-radius: 10px;
-    }
+#preload-span-1 img {
+    margin: 0 0 0 15px;
+    width: 100px;
+    height: 100px;
 }
 
-@media only screen and (min-device-width: 1024px) {
-    body {
-        flex-direction: row;
-    }
-
-    #dasw-header {
-        display: flex;
-    }
-
-    #dasw-content {
-        width: 80%;
-    }
+#preload-span-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media only screen and (min-device-width: 1280px) {
-    #dasw-hi img {
-        width: 70%;
-    }
-
-    .project-list {
-        justify-content: flex-start;
-    }
-
-    .card {
-        width: 29%;
-    }
-
-    .contact-img img {
-        width: 50%;
-    }
-
-    .contact-desc a {
-        width: 40%;
-    }
+#preload-span-2 img {
+    position: absolute;
+    width: 60em;
+    height: 40em;
+    bottom: 0;
+    right: -5em;
 }
 
-@media only screen and (min-device-width: 1366px) {
-    /* insert styles here */
+#preload-span-2 span {
+    font-size: 40px;
 }
 
-@media only screen and (min-device-width: 1440px) {
-    .dasw-about-contact {
-        flex-direction: row;
-    }
-
-    .about-contact {
-        width: 100%;
-    }
-
-    .photo-profile {
-        display: flex;
-    }
-
-    .photo-profile img {
-        width: 18em;
-        height: 38em;
-    }
-
-    .contact-img {
-        width: 30%;
-    }
-
-    .contact-img img {
-        width: 100%;
-    }
-
-    .contact-img h1 {
-        font-size: 2em;
-    }
-
-    .contact-desc {
-        width: 70%;
-    }
-
-    .contact-desc a {
-        width: 30%;
-    }
+#preload-span-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media only screen and (min-device-width: 1600px) {
-    /* PRELOADER */
-    /* ----------------------------- */
-
-    #preloader {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #fff;
-        position: fixed;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-    }
-
-    #preloader img {
-        width: 250px;
-        height: 250px;
-    }
-
-    #preload-span-1 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    #preload-span-1 img {
-        margin: 0 0 0 15px;
-        width: 100px;
-        height: 100px;
-    }
-
-    #preload-span-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #preload-span-2 img {
-        position: absolute;
-        width: 60em;
-        height: 40em;
-        bottom: 0;
-        right: -5em;
-    }
-
-    #preload-span-2 span {
-        font-size: 40px;
-    }
-
-    #preload-span-3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #preload-span-3 img {
-        width: 15em;
-        height: 15em;
-    }
-
-    #preload-span-3 h1 {
-        margin: 0.5em 0 0 0;
-        font-size: 5em;
-    }
-
-    /* END OF PRELOADER */
-    /* ----------------------------- */
-
-    /* DASW HEADER */
-    /* ----------------------------- */
-    #dasw-header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 20%;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.3);
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
-        left: 0;
-    }
-
-    #dasw-brand {
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    #dasw-brand img {
-        width: 100px;
-        height: 100px;
-        margin: 0 0 10px 0;
-    }
-
-    /* NAVIGATION MENU */
-    /* ----------------------------- */
-    .nav-menu {
-        margin: 10px 0 0 0;
-        display: flex;
-        align-items: center;
-    }
-
-    .nav-menu ul {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-    .nav-menu ul li {
-        list-style: none;
-        padding: 10px;
-        color: #fff;
-        transition: all 0.35s ease;
-    }
-
-    .nav-menu ul li a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: #fff;
-    }
-
-    .nav-menu ul li a::before,
-    .nav-menu ul li a::after {
-        content: 'DASW';
-        font-size: 7px;
-        border-top: 1px solid;
-        border-bottom: 1px solid;
-        margin: 0 10px;
-        padding: 2px;
-        opacity: 0;
-        transition: all 0.15s ease;
-    }
-
-    .nav-menu ul li a:hover::before,
-    .nav-menu ul li a:hover::after {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    .nav-menu ul li a::before {
-        color: rgb(32, 227, 178);
-        border-color: rgb(32, 227, 178);
-        transform: translateX(-50%);
-    }
-
-    .nav-menu ul li a::after {
-        color: rgb(194, 65, 34);
-        border-color: rgb(194, 65, 34);
-        transform: translateX(50%);
-    }
-
-    .brand-name {
-        display: flex;
-        flex-direction: column;
-        color: #fff;
-    }
-
-    .brand-name strong {
-        margin: 0 0 5px 0;
-    }
-
-    .brand-name span {
-        font-size: 13px;
-    }
-
-    .social-media {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        height: 100%;
-        color: #fff;
-    }
-
-    .social-media ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .social-media ul li {
-        list-style: none;
-        padding: 10px;
-        font-size: 20px;
-    }
-
-    .social-media span {
-        margin: 0 0 5px 0;
-    }
-
-    /* END OF NAVIGATION MENU */
-    /* ----------------------------- */
-    /* END OF DASW HEADER */
-    /* ----------------------------- */
-
-    /* DASW CONTENT */
-    /* ----------------------------- */
-    /* DASW HI */
-    /* ----------------------------- */
-
-    #dasw-content {
-        margin: 0;
-        padding: 0 3em 0 3em;
-        width: 80%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    #dasw-hi {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: #fff;
-    }
-
-    #dasw-hi h1 {
-        font-size: 3.5em;
-        font-family: 'Play', sans-serif;
-        margin: 0;
-    }
-
-    #dasw-hi h1 span {
-        font-size: 1.5em;
-    }
-
-    #dasw-hi h1 p:nth-last-child(2) {
-        font-family: 'Play', sans-serif;
-        font-weight: normal;
-        margin: 0;
-        letter-spacing: normal;
-        font-size: 0.4em;
-    }
-
-    #dasw-hi h1 p:nth-last-child(1) {
-        font-family: 'Barlow Semi Condensed', sans-serif;
-        font-weight: 100;
-        margin: 1em 0 0 0;
-        font-size: 0.4em;
-        letter-spacing: 0.15cm;
-        font-style: italic;
-    }
-
-    #dasw-hi img {
-        width: 60%;
-        margin: 5em 0;
-    }
-
-    .slide-button {
-        text-decoration: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 5.3em;
-        padding: 0.5em;
-        background-color: transparent;
-        color: #fff;
-        font-size: 1.5em;
-        font-family: 'Barlow Semi Condensed', sans-serif;
-        font-weight: 100;
-        animation: slide-button 2s ease 0s infinite alternate backwards;
-    }
-
-    /* END OF DASW HI */
-    /* ----------------------------- */
-
-    /* DASW PROJECT */
-    /* ----------------------------- */
-
-    #dasw-project {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    #dasw-project h1 {
-        margin: 0 0 1em 0;
-        font-size: 4em;
-    }
-
-    .project-list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0 1.5em 1.5em 0;
-        padding: 1em;
-        width: 28%;
-        border-radius: 0.5em;
-        background-color: #2c2c2e;
-    }
-
-    .card-img {
-        width: 10em;
-        margin: 0 auto;
-    }
-
-    .card:nth-child(6) .card-img {
-        width: 17em;
-    }
-
-    .card-title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0.5em 0;
-    }
-
-    .card-title h3 {
-        text-align: center;
-        margin: 1em 0 0.5em 0;
-    }
-
-    .card-title span {
-        margin: 0 0 0.5em 0;
-    }
-
-    .card-body {
-        height: 10em;
-        margin: 0 0 1em 0;
-    }
-
-    .card-body .desc {
-        margin: 0;
-    }
-
-    .card-button {
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-    }
-
-    .card-button a {
-        text-decoration: none;
-        border: 1px solid #fff;
-        padding: 0.8em;
-        color: #fff;
-    }
-
-    /* END OF DASW PROJECT */
-    /* ----------------------------- */
-    /* DASW ABOUT CONTACT */
-    /* ----------------------------- */
-
-    .dasw-about-contact {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* ABOUT */
-    /* ----------------------------- */
-
-    .about-contact {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-
-    .about {
-        margin: 0;
-        font-size: 4em;
-    }
-
-    .about-contact h2 {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        font-style: italic;
-        letter-spacing: 0.3cm;
-    }
-
-    .about-contact p {
-        margin: 0;
-    }
-
-    .photo-profile {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-    }
-
-    .photo-profile img {
-        position: sticky;
-        position: -webkit-sticky;
-        bottom: 0;
-        width: 19em;
-        height: 40em;
-    }
-
-    /* END OF ABOUT */
-    /* ----------------------------- */
-
-    /* SKILLS */
-    /* ----------------------------- */
-
-    .skills {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-    }
-
-    .skills h1 {
-        margin-bottom: 0.3em;
-        font-size: 4em;
-    }
-
-    .skills-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-    }
-
-    .skills-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 45%;
-        height: 25em;
-        margin: 0.5em;
-        background-color: #2c2c2e;
-        border-radius: 1em;
-    }
-
-    .skills-logo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 15em;
-    }
-
-    .skills-logo img {
-        width: 13em;
-    }
-
-    .skills-list:nth-child(4) .skills-logo img,
-    .skills-list:nth-child(5) .skills-logo img {
-        width: 8em;
-    }
-
-    .skills-logo i {
-        font-size: 1.5em;
-    }
-
-    .skills-desc {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .skills-title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .skills-desc p {
-        padding: 1em;
-    }
-
-    .skills-title h1 {
-        font-size: 2em;
-        margin: 0;
-        padding: 0.5em 0 0 0;
-        text-align: center;
-    }
-
-    .skills-title span {
-        margin: 0.2em 0 0 0;
-        text-align: center;
-    }
-
-    /* END OF SKILLS */
-    /* ----------------------------- */
-
-    /* CERTIFIED */
-    /* ----------------------------- */
-
-    .certified {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-
-    .certified h1 {
-        margin-bottom: 0.3em;
-        font-size: 4em;
-    }
-
-    .certified-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-    }
-
-    .certified-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 40%;
-        height: 5em;
-        margin: 0.5em;
-        padding: 2em;
-        background-color: #fff;
-        border-radius: 1em;
-    }
-
-    .certified-img {
-        width: 100%;
-    }
-
-    .certified-img img {
-        width: 70%;
-    }
-
-    .certified-list:nth-child(3) .certified-img img,
-    .certified-list:nth-child(4) .certified-img img {
-        width: 20%;
-    }
-
-    .certified-desc h1 {
-        margin: 0.5em 0 0 0;
-        font-size: 1.3em;
-        color: #000;
-    }
-
-    /* END OF CERTIFIED */
-    /* ----------------------------- */
-
-    /* CONTACT */
-    /* ----------------------------- */
-
-    .contact {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin: 0 0 2em 0;
-    }
-
-    .contact h1 {
-        margin: 0.5em 0 0 0;
-        font-size: 4em;
-    }
-
-    .contact span {
-        margin: 0 0 1em 0;
-        font-size: 2em;
-    }
-
-    .contact-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .contact-img {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
-    }
-
-    .contact-img img {
-        width: 15em;
-    }
-
-    .contact-img h1 {
-        font-size: 2em;
-    }
-
-    .contact-desc {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        width: 70%;
-        height: 100%;
-    }
-
-    .contact-desc a {
-        text-decoration: none;
-        padding: 1em;
-        margin: 0.5em;
-        color: #fff;
-    }
-
-    .contact-desc a:nth-child(1) {
-        background-color: #EB6383;
-    }
-
-    .contact-desc a:nth-child(2) {
-        background-color: #FA9191;
-    }
-
-    .contact-desc a:nth-child(3) {
-        background-color: #F35588;
-    }
-
-    .contact-desc a:nth-child(4) {
-        background-color: #FF616D;
-    }
-
-    .contact-desc a:nth-child(5) {
-        background-color: #66DE93;
-    }
-
-    /* END OF CONTACT */
-    /* ----------------------------- */
-
-    /* END OF DASW ABOUT CONTACT */
-    /* ----------------------------- */
-    /* END OF DASW CONTENT */
-    /* ----------------------------- */
+#preload-span-3 img {
+    width: 15em;
+    height: 15em;
 }
 
-@media only screen and (min-device-width: 1680px) {
-    /* insert styles here */
+#preload-span-3 h1 {
+    margin: 0.5em 0 0 0;
+    font-size: 5em;
 }
 
-@media only screen and (max-width: 1920px) {
-    /* insert styles here */
+/* END OF PRELOADER */
+/* ----------------------------- */
+
+/* DASW HEADER */
+/* ----------------------------- */
+#dasw-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
 }
+
+#dasw-brand {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#dasw-brand img {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 10px 0;
+}
+
+/* NAVIGATION MENU */
+/* ----------------------------- */
+.nav-menu {
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-menu ul li {
+    list-style: none;
+    padding: 10px;
+    color: #fff;
+    transition: all 0.35s ease;
+}
+
+.nav-menu ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu ul li a::before,
+.nav-menu ul li a::after {
+    content: 'DASW';
+    font-size: 7px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin: 0 10px;
+    padding: 2px;
+    opacity: 0;
+    transition: all 0.15s ease;
+}
+
+.nav-menu ul li a:hover::before,
+.nav-menu ul li a:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.nav-menu ul li a::before {
+    color: rgb(32, 227, 178);
+    border-color: rgb(32, 227, 178);
+    transform: translateX(-50%);
+}
+
+.nav-menu ul li a::after {
+    color: rgb(194, 65, 34);
+    border-color: rgb(194, 65, 34);
+    transform: translateX(50%);
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.brand-name strong {
+    margin: 0 0 5px 0;
+}
+
+.brand-name span {
+    font-size: 13px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+.social-media ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media ul li {
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.social-media span {
+    margin: 0 0 5px 0;
+}
+
+/* END OF NAVIGATION MENU */
+/* ----------------------------- */
+/* END OF DASW HEADER */
+/* ----------------------------- */
+
+/* DASW CONTENT */
+/* ----------------------------- */
+/* DASW HI */
+/* ----------------------------- */
+
+#dasw-content {
+    margin: 0;
+    padding: 0 3em 0 3em;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#dasw-hi {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+#dasw-hi h1 {
+    font-size: 3.5em;
+    font-family: 'Play', sans-serif;
+    margin: 0;
+}
+
+#dasw-hi h1 span {
+    font-size: 1.5em;
+}
+
+#dasw-hi h1 p:nth-last-child(2) {
+    font-family: 'Play', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: normal;
+    font-size: 0.4em;
+}
+
+#dasw-hi h1 p:nth-last-child(1) {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 100;
+    margin: 1em 0 0 0;
+    font-size: 0.4em;
+    letter-spacing: 0.15cm;
+    font-style: italic;
+}
+
+#dasw-hi img {
+    width: 60%;
+    margin: 5em 0;
+}
+
+.slide-button {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5.3em;
+    padding: 0.5em;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 100;
+    animation: slide-button 2s ease 0s infinite alternate backwards;
+}
+
+/* END OF DASW HI */
+/* ----------------------------- */
+
+/* DASW PROJECT */
+/* ----------------------------- */
+
+#dasw-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#dasw-project h1 {
+    margin: 0 0 1em 0;
+    font-size: 4em;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1.5em 1.5em 0;
+    padding: 1em;
+    width: 28%;
+    border-radius: 0.5em;
+    background-color: #2c2c2e;
+}
+
+.card-img {
+    width: 10em;
+    margin: 0 auto;
+}
+
+.card:nth-child(6) .card-img {
+    width: 17em;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+.card-title h3 {
+    text-align: center;
+    margin: 1em 0 0.5em 0;
+}
+
+.card-title span {
+    margin: 0 0 0.5em 0;
+}
+
+.card-body {
+    height: 10em;
+    margin: 0 0 1em 0;
+}
+
+.card-body .desc {
+    margin: 0;
+}
+
+.card-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.card-button a {
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 0.8em;
+    color: #fff;
+}
+
+/* END OF DASW PROJECT */
+/* ----------------------------- */
+/* DASW ABOUT CONTACT */
+/* ----------------------------- */
+
+.dasw-about-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+/* ABOUT */
+/* ----------------------------- */
+
+.about-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+    margin: 0;
+    font-size: 4em;
+}
+
+.about-contact h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.3cm;
+}
+
+.about-contact p {
+    margin: 0;
+}
+
+.photo-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.photo-profile img {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    width: 19em;
+    height: 40em;
+}
+
+/* END OF ABOUT */
+/* ----------------------------- */
+
+/* SKILLS */
+/* ----------------------------- */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.skills h1 {
+    margin-bottom: 0.3em;
+    font-size: 4em;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    height: 25em;
+    margin: 0.5em;
+    background-color: #2c2c2e;
+    border-radius: 1em;
+}
+
+.skills-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15em;
+}
+
+.skills-logo img {
+    width: 13em;
+}
+
+.skills-list:nth-child(4) .skills-logo img,
+.skills-list:nth-child(5) .skills-logo img {
+    width: 8em;
+}
+
+.skills-logo i {
+    font-size: 1.5em;
+}
+
+.skills-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.skills-desc p {
+    padding: 1em;
+}
+
+.skills-title h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0.5em 0 0 0;
+    text-align: center;
+}
+
+.skills-title span {
+    margin: 0.2em 0 0 0;
+    text-align: center;
+}
+
+/* END OF SKILLS */
+/* ----------------------------- */
+
+/* CERTIFIED */
+/* ----------------------------- */
+
+.certified {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.certified h1 {
+    margin-bottom: 0.3em;
+    font-size: 4em;
+}
+
+.certified-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.certified-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 5em;
+    margin: 0.5em;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 1em;
+}
+
+.certified-img {
+    width: 100%;
+}
+
+.certified-img img {
+    width: 70%;
+}
+
+.certified-list:nth-child(3) .certified-img img,
+.certified-list:nth-child(4) .certified-img img {
+    width: 20%;
+}
+
+.certified-desc h1 {
+    margin: 0.5em 0 0 0;
+    font-size: 1.3em;
+    color: #000;
+}
+
+/* END OF CERTIFIED */
+/* ----------------------------- */
+
+/* CONTACT */
+/* ----------------------------- */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 2em 0;
+}
+
+.contact h1 {
+    margin: 0.5em 0 0 0;
+    font-size: 4em;
+}
+
+.contact span {
+    margin: 0 0 1em 0;
+    font-size: 2em;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.contact-img img {
+    width: 15em;
+}
+
+.contact-img h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.contact-desc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+.contact-desc a {
+    text-decoration: none;
+    padding: 1em;
+    margin: 0.5em;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.contact-desc a:nth-child(1) {
+    background-color: #EB6383;
+}
+
+.contact-desc a:nth-child(2) {
+    background-color: #FA9191;
+}
+
+.contact-desc a:nth-child(3) {
+    background-color: #F35588;
+}
+
+.contact-desc a:nth-child(4) {
+    background-color: #FF616D;
+}
+
+.contact-desc a:nth-child(5) {
+    background-color: #66DE93;
+}
+
+/* END OF CONTACT */
+/* ----------------------------- */
+
+/* END OF DASW ABOUT CONTACT */
+/* ----------------------------- */
+/* END OF DASW CONTENT */
+/* ----------------------------- */
