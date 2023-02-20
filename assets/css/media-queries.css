@@ -551,4 +551,85 @@
     }
 }
 
-@media only screen and (min-device-width: 1681px) and (max-device-width: 2560px) {}
+@media only screen and (min-device-width: 1681px) and (max-device-width: 2560px) {
+    body {
+        flex-direction: column;
+    }
+
+    #dasw-header {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }
+
+    #dasw-brand {
+        width: 15%;
+    }
+
+    #dasw-content {
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #dasw-hi {
+        width: 50%;
+        height: 85vh;
+    }
+
+    #dasw-project {
+        width: 80%;
+    }
+
+    .nav-menu {
+        width: auto;
+    }
+
+    .nav-menu ul {
+        flex-direction: row;
+    }
+
+    .nav-menu ul li a {
+        width: fit-content;
+    }
+
+    .social-media {
+        justify-content: center;
+        align-items: flex-end;
+        width: 30%;
+        height: auto;
+    }
+
+    /* .project-list {
+        justify-content: center;
+    } */
+
+    .card {
+        width: 22.1%;
+    }
+
+    .dasw-about-contact {
+        width: 80%;
+    }
+
+    .photo-profile img {
+        width: 19em;
+        height: 41em;
+    }
+
+    .skills-list {
+        width: 30%;
+        height: 30em;
+    }
+
+    .certified-list {
+        width: 20%;
+        height: 9em;
+    }
+
+    .certified-list:nth-child(3) .certified-img img,
+    .certified-list:nth-child(4) .certified-img img {
+        width: 35%;
+    }
+}
