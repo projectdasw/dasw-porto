@@ -119,3 +119,142 @@
 
 // END OF INTERSECTION OBSERVER (LAZY LOAD)
 // ----------------------------------------------------------------------------------
+
+// PROJECT LIST MODAL BUTTON EVENT HANDLER
+// ----------------------------------------------------------------------------------
+
+// MODAL OPEN BUTTON
+const esac_button = document.getElementById("esac-button");
+const blimbing_button = document.getElementById("blimbing-button");
+const kebun_button = document.getElementById("kebun-button");
+const keuskupan_button = document.getElementById("keuskupan-button");
+const kompatise_button = document.getElementById("kompatise-button");
+const kiu_button = document.getElementById("kiu-button");
+const titi_button = document.getElementById("titi-button");
+const seminari_button = document.getElementById("seminari-button");
+// END OF MODAL OPEN BUTTON
+
+// MODAL CONTENT
+const esac_modal = document.getElementById("esac");
+const gereja_blimbing_modal = document.getElementById("gereja-blimbing");
+const kebun_sayur_blimbing_modal = document.getElementById("kebun-sayur-blimbing");
+const keuskupan_malang_modal = document.getElementById("keuskupan-malang");
+const kompatise_modal = document.getElementById("kompatise");
+const kiu_modal = document.getElementById("kiu");
+const mc_titi_modal = document.getElementById("mc-titi");
+const seminari_probolinggo_modal = document.getElementById("seminari-probolinggo");
+// END OF MODAL CONTENT
+
+// MODAL CLOSE BUTTON
+const close_modal_esac = document.getElementById("close-modal-esac");
+const close_modal_blimbing = document.getElementById("close-modal-blimbing");
+const close_modal_kebun = document.getElementById("close-modal-kebun");
+const close_modal_keuskupan = document.getElementById("close-modal-keuskupan");
+const close_modal_kompatise = document.getElementById("close-modal-kompatise");
+const close_modal_kiu = document.getElementById("close-modal-kiu");
+const close_modal_titi = document.getElementById("close-modal-titi");
+const close_modal_seminari = document.getElementById("close-modal-seminari");
+// END OF MODAL CLOSE BUTTON
+
+// FUNCTION MODAL OPEN BUTTON
+esac_button.addEventListener('click', function () {
+    esac_modal.style.transform = "translateY(0)";
+    esac_modal.style.transition = ".5s all ease-in-out";
+})
+
+blimbing_button.addEventListener('click', function () {
+    gereja_blimbing_modal.style.transform = "translateY(0)";
+    gereja_blimbing_modal.style.transition = ".5s all ease-in-out";
+})
+
+kebun_button.addEventListener('click', function () {
+    kebun_sayur_blimbing_modal.style.transform = "translateY(0)";
+    kebun_sayur_blimbing_modal.style.transition = ".5s all ease-in-out";
+})
+
+keuskupan_button.addEventListener('click', function () {
+    keuskupan_malang_modal.style.transform = "translateY(0)";
+    keuskupan_malang_modal.style.transition = ".5s all ease-in-out";
+})
+
+kompatise_button.addEventListener('click', function () {
+    kompatise_modal.style.transform = "translateY(0)";
+    kompatise_modal.style.transition = ".5s all ease-in-out";
+})
+
+kiu_button.addEventListener('click', function () {
+    kiu_modal.style.transform = "translateY(0)";
+    kiu_modal.style.transition = ".5s all ease-in-out";
+})
+
+titi_button.addEventListener('click', function () {
+    mc_titi_modal.style.transform = "translateY(0)";
+    mc_titi_modal.style.transition = ".5s all ease-in-out";
+})
+
+seminari_button.addEventListener('click', function () {
+    seminari_probolinggo_modal.style.transform = "translateY(0)";
+    seminari_probolinggo_modal.style.transition = ".5s all ease-in-out";
+})
+// END OF FUNCTION MODAL OPEN BUTTON
+
+// FUNCTION MODAL CLOSE BUTTON
+close_modal_esac.addEventListener("click", function () {
+    esac_modal.style.transform = "translateY(-1000px)";
+    setTimeout(() => {
+        esac_modal.removeAttribute("style")
+    }, 1000);
+})
+
+close_modal_blimbing.addEventListener("click", function () {
+    gereja_blimbing_modal.style.transform = "translateY(-1000px)";
+    setTimeout(() => {
+        gereja_blimbing_modal.removeAttribute("style")
+    }, 1000);
+})
+
+close_modal_kebun.addEventListener("click", function () {
+    kebun_sayur_blimbing_modal.style.transform = "translateY(-1000px)";
+    setTimeout(() => {
+        kebun_sayur_blimbing_modal.removeAttribute("style")
+    }, 1000);
+})
+
+close_modal_keuskupan.addEventListener("click", function () {
+    keuskupan_malang_modal.style.transform = "translateY(-1000px)";
+    setTimeout(() => {
+        keuskupan_malang_modal.removeAttribute("style")
+    }, 1000);
+})
+
+close_modal_kompatise.addEventListener("click", function () {
+    kompatise_modal.style.transform = "translateY(-1000px)";
+    setTimeout(() => {
+        kompatise_modal.removeAttribute("style")
+    }, 1000);
+})
+
+close_modal_kiu.addEventListener("click", function () {
+    kiu_modal.style.transform = "translateY(-1000px)";
+    setTimeout(() => {
+        kiu_modal.removeAttribute("style")
+    }, 1000);
+})
+
+close_modal_titi.addEventListener("click", function () {
+    mc_titi_modal.style.transform = "translateY(-1000px)";
+    setTimeout(() => {
+        mc_titi_modal.removeAttribute("style")
+    }, 1000);
+})
+
+close_modal_seminari.addEventListener("click", function () {
+    seminari_probolinggo_modal.style.transform = "translateY(-1000px)";
+    setTimeout(() => {
+        seminari_probolinggo_modal.removeAttribute("style")
+    }, 1000);
+})
+// END OF FUNCTION MODAL OPEN BUTTON
+
+// END OF PROJECT LIST MODAL BUTTON EVENT HANDLER
+// ----------------------------------------------------------------------------------

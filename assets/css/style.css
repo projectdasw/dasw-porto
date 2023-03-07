@@ -26,6 +26,29 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: overlay;
+}
+
+/* Scrollbar Width */
+::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(148, 148, 148);
+    border-radius: 5em;
+}
+
+/* Scrollbar Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
 }
 
 /* ANIMATION */
@@ -78,6 +101,216 @@ body {
 }
 
 /* END OF ANIMATION */
+/* ----------------------------- */
+
+/* MODAL POP UP */
+/* ----------------------------- */
+
+/* ESAC Inventory Book Apps */
+/* ----------------------------- */
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1;
+    transform: translateY(-1000px);
+}
+
+.modal-close {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1em 1em 0 0;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-close .tooltip-text {
+    opacity: 0;
+    position: fixed;
+    top: 1.5em;
+    right: 6.5em;
+    z-index: 1;
+    font-size: 14px;
+    border: 1px solid rgb(94, 94, 94);
+    background-color: rgb(94, 94, 94);
+    padding: 10px;
+    border-radius: 10px;
+    transition: .2s all ease-in-out;
+}
+
+.modal-close:hover .tooltip-text {
+    opacity: 1;
+
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.modal-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    height: auto;
+}
+
+.modal-aside-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.modal-aside-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 0.2em;
+}
+
+.modal-aside-title h1 {
+    font-size: 20px;
+    margin: 0.5em 0 0.2em 0;
+}
+
+.modal-aside-title span:nth-last-child(1) {
+    margin: 0.5em 0 0 0;
+}
+
+.modal-aside-body h1 {
+    text-decoration: underline;
+    margin: 0 0 0.2em 0;
+}
+
+.modal-aside-body ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-aside-body ul li::before {
+    content: "⇨";
+    color: #134bc4;
+    font-size: 1.5em;
+}
+
+.modal-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+    height: 100%;
+    margin: 0 0 0 1em;
+}
+
+.modal-section-title h1 {
+    margin: 0.2em 0 0.2em 0;
+}
+
+.modal-section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 1em 0;
+}
+
+.modal-img {
+    margin: 0 auto;
+    width: 12em;
+    height: 12em;
+}
+
+.modal-section-body {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    padding: 0.8em 0.5em 0 0;
+    overflow: auto;
+}
+
+/* Modal Body Scrollbar Width */
+.modal-section-body::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+/* Modal Body Scrollbar Track */
+/* .modal-body::-webkit-scrollbar-track {} */
+
+/* Modal Body Scrollbar Handle */
+.modal-section-body::-webkit-scrollbar-thumb {
+    background: rgb(22, 239, 255);
+    border-radius: 5em;
+}
+
+/* Modal Body Scrollbar Handle on hover */
+.modal-section-body::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+/* .modal-section-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 1em 0 0 0;
+} */
+
+/* End of ESAC Inventory Book Apps */
+/* ----------------------------- */
+
+/* END OF MODAL POP UP */
+/* ----------------------------- */
+
+/* LOADER PAGE */
+/* ----------------------------- */
+
+#loader-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 4;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: .3s all ease-in-out;
+}
+
+#loader-page img {
+    width: 20%;
+}
+
+/* END OF LOADER PAGE */
 /* ----------------------------- */
 
 /* PRELOADER */
@@ -147,6 +380,20 @@ body {
 }
 
 /* END OF PRELOADER */
+/* ----------------------------- */
+
+/* LOAD ALL PAGE CONTAINER */
+/* ----------------------------- */
+
+#load-page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* END OF LOAD ALL PAGE CONTAINER */
 /* ----------------------------- */
 
 /* DASW HEADER */
@@ -439,6 +686,7 @@ body {
     border: 1px solid #fff;
     padding: 0.8em;
     color: #fff;
+    cursor: pointer;
 }
 
 /* END OF DASW PROJECT */

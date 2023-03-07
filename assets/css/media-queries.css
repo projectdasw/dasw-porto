@@ -11,6 +11,75 @@
         width: auto;
         padding: 10px;
     }
+
+    .modal-content {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: 1em;
+    }
+
+    .modal-img {
+        width: 8em;
+        height: 8em;
+    }
+
+    .modal-aside {
+        width: auto;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    .modal-section {
+        display: none;
+    }
+
+    .modal-close {
+        color: #000;
+    }
+}
+
+@media only screen and (device-width: 1024px) {
+    .modal-content {
+        flex-direction: inherit;
+        height: 70%;
+    }
+
+    .modal-section {
+        display: flex;
+    }
+
+    .modal-aside {
+        width: inherit;
+    }
+
+    .modal-close {
+        top: -10px;
+        color: #fff;
+    }
+
+    .modal-img {
+        width: 40%;
+        height: auto;
+    }
+
+    .modal-aside-title h1 {
+        font-size: 1em;
+    }
+
+    .modal-aside-body h1 {
+        font-size: 1.2em;
+    }
+
+    .modal-aside-body ul {
+        font-size: .8em;
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1280px) {
@@ -31,6 +100,11 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .modal-content {
+        width: 100%;
+        height: 100%;
+    }
+
     #dasw-hi h1 {
         font-size: 2.5em;
     }
@@ -347,6 +421,15 @@
 }
 
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1280px) {
+    .modal-img {
+        width: 40%;
+        height: auto;
+    }
+
+    .modal-aside-title h1 {
+        font-size: 1em;
+    }
+
     #dasw-hi img {
         width: 65%;
         margin: 2.1em 0;
@@ -399,12 +482,26 @@
         margin: 2.1em 0;
     }
 
+    .modal-img {
+        width: 45%;
+        height: auto;
+    }
+
+    .modal-aside-body h1 {
+        font-size: 1.5em;
+    }
+
+    .modal-aside-body ul {
+        font-size: .9em;
+    }
+
     .photo-profile img {
         width: 18em;
         height: 38em;
     }
 
     .card {
+        width: 29%;
         margin: 0 0.2em 0.2em 0;
     }
 
@@ -433,6 +530,19 @@
     #dasw-hi img {
         width: 50%;
         margin: 2em 0;
+    }
+
+    .modal-img {
+        width: 45%;
+        height: auto;
+    }
+
+    .modal-aside-body h1 {
+        font-size: 1.5em;
+    }
+
+    .modal-aside-body ul {
+        font-size: .9em;
     }
 
     .card {
@@ -560,6 +670,7 @@
         width: 100%;
         height: 100%;
         flex-direction: row;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     #dasw-brand {
@@ -631,5 +742,15 @@
     .certified-list:nth-child(3) .certified-img img,
     .certified-list:nth-child(4) .certified-img img {
         width: 35%;
+    }
+
+    .modal-content {
+        width: 80em;
+    }
+}
+
+@media only screen and (device-width: 2560px) {
+    .modal-close {
+        right: 500px;
     }
 }
