@@ -22,7 +22,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: row;
-    background-image: url("../img/about-bg-comp.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/about-bg-comp.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -106,7 +106,7 @@ body {
 /* MODAL POP UP */
 /* ----------------------------- */
 
-/* ESAC Inventory Book Apps */
+/* PROJECT LIST */
 /* ----------------------------- */
 
 .modal-container {
@@ -281,7 +281,76 @@ body {
     margin: 1em 0 0 0;
 } */
 
-/* End of ESAC Inventory Book Apps */
+/* END OF PROJECT LIST */
+/* ----------------------------- */
+
+/* SERVICES */
+/* ----------------------------- */
+
+.modal-services {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transform: translateY(-100%);
+}
+
+.modal-services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    padding: 1em;
+}
+
+.modal-close-services {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em 1em 0 0;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-close-services .services-tooltip-text {
+    opacity: 0;
+    position: fixed;
+    top: 1.5em;
+    right: 6.5em;
+    font-size: 14px;
+    border: 1px solid rgb(94, 94, 94);
+    background-color: rgb(94, 94, 94);
+    padding: 10px;
+    border-radius: 10px;
+    transition: .2s all ease-in-out;
+}
+
+.modal-close-services:hover .tooltip-text {
+    opacity: 1;
+
+}
+
+.modal-price {
+    border: 1px solid #fff;
+    border-radius: .3em;
+    padding: .6em;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+/* END OF SERVICES */
 /* ----------------------------- */
 
 /* END OF MODAL POP UP */
@@ -303,7 +372,7 @@ body {
     z-index: 4;
     background-color: #fff;
     transform: translateX(-100%);
-    transition: .3s all ease-in-out;
+    transition: 1s all ease;
 }
 
 #loader-page img {
@@ -404,7 +473,6 @@ body {
     justify-content: center;
     width: 20%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -455,6 +523,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .nav-menu ul li a::before,
@@ -545,7 +614,6 @@ body {
     display: flex;
     flex-direction: column;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.3);
 }
 
 #dasw-hi {
@@ -689,8 +757,298 @@ body {
     cursor: pointer;
 }
 
+/* PROJECT PAGE LIST */
+/* ----------------------------- */
+.project-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.project-overlay {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12em;
+    height: 12em;
+    padding: 1em;
+}
+
+.project-overlay img {
+    width: 80%;
+    height: auto;
+}
+
+.project-text {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .3s all ease-in-out;
+}
+
+.project-overlay:nth-child(even) .project-text {
+    transform: translateY(100%);
+}
+
+.project-overlay:nth-child(odd) .project-text {
+    transform: translateX(-100%);
+}
+
+.project-text h1 {
+    font-size: 1em;
+}
+
+.project-button {
+    border-radius: .5em;
+    background-color: #22A39F;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.project-overlay:hover .project-text {
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
+/* PROJECT PAGE LIST */
+/* ----------------------------- */
+
 /* END OF DASW PROJECT */
 /* ----------------------------- */
+
+
+/* SERVICES PAGE */
+/* ----------------------------- */
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.services-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.row2 {
+    width: 50%;
+    align-items: center;
+}
+
+.row2 img {
+    width: 100%;
+    height: min-content;
+}
+
+.services-heading h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.services-heading h2 {
+    font-size: 20px;
+    margin: .3em 0 0 0;
+}
+
+.services-heading span {
+    margin: 1em 0;
+    font-size: 30px;
+}
+
+.services-heading .slide-button {
+    width: max-content;
+}
+
+.services-heading .slide-button i {
+    margin: 0 .5em 0 0;
+}
+
+.services-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.services-features-heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 4em 0;
+}
+
+.services-features-heading h1 {
+    font-size: 5em;
+    margin: 0 0 .2em 0;
+}
+
+.services-features-heading span {
+    font-size: 2em;
+}
+
+.services-features-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.web-services,
+.desktop-services,
+.office-services,
+.design-services,
+.broadcast-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+    height: max(20rem, 30vh);
+    overflow: hidden;
+    border-radius: 1em;
+    padding: 1em;
+    transition: .3s all;
+}
+
+.web-services:hover,
+.desktop-services:hover,
+.office-services:hover,
+.design-services:hover,
+.broadcast-services:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 1px 20px 0 #c1c1c1;
+    z-index: 1;
+}
+
+.web-services {
+    background: linear-gradient(0deg, rgba(44, 44, 46, 0.6026785714285714) 0%, rgba(44, 44, 46, 0.5998774509803921) 0%),
+        url("../img/web_development.jpg");
+    background-size: cover;
+}
+
+.desktop-services {
+    background: linear-gradient(0deg, rgba(44, 44, 46, 0.6026785714285714) 0%, rgba(44, 44, 46, 0.5998774509803921) 0%),
+        url("../img/cashier.jpg");
+    background-size: 50em 50em;
+    background-position: left center;
+}
+
+.office-services {
+    background: linear-gradient(0deg, rgba(44, 44, 46, 0.6026785714285714) 0%, rgba(44, 44, 46, 0.5998774509803921) 0%),
+        url("../img/office.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.design-services {
+    background: linear-gradient(0deg, rgba(44, 44, 46, 0.6026785714285714) 0%, rgba(44, 44, 46, 0.5998774509803921) 0%),
+        url("../img/design.jpg");
+    background-size: 50em 50em;
+    background-position: left top;
+}
+
+.broadcast-services {
+    background: linear-gradient(0deg, rgba(44, 44, 46, 0.6026785714285714) 0%, rgba(44, 44, 46, 0.5998774509803921) 0%),
+        url("../img/broadcast.jpg");
+    background-size: cover;
+}
+
+.web-desc,
+.desktop-desc,
+.office-desc,
+.design-desc,
+.broadcast-desc {
+    width: 100%;
+    height: 100%;
+}
+
+.desc-title h1 {
+    margin: 0 0 .3em 0;
+}
+
+.web-desc img,
+.desktop-desc img {
+    width: 90px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.office-desc img,
+.design-desc img {
+    width: 50px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.broadcast-desc img {
+    width: 80px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.web-desc ol,
+.desktop-desc ol,
+.office-desc ol,
+.design-desc ol,
+.broadcast-desc ol {
+    margin: .3em 0 0 0;
+    padding-inline-start: 1em;
+}
+
+.web-desc p,
+.desktop-desc p,
+.office-desc p,
+.design-desc p,
+.broadcast-desc p {
+    margin: .7em 0 0 0;
+}
+
+/* END OF SERVICES PAGE */
+/* ----------------------------- */
+
 /* DASW ABOUT CONTACT */
 /* ----------------------------- */
 

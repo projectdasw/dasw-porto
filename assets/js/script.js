@@ -120,6 +120,36 @@
 // END OF INTERSECTION OBSERVER (LAZY LOAD)
 // ----------------------------------------------------------------------------------
 
+// const loader_page = document.getElementById("loader-page");
+
+// $('#home').click(function () {
+//     loader_page.style.transform = "translateX(0)";
+//     setTimeout(() => {
+//         loader_page.removeAttribute("style");
+//         $('#dasw-content').load('home.html');
+//     }, 2000);
+
+// })
+
+// $('#project').click(function () {
+//     loader_page.style.transform = "translateX(0)";
+//     setTimeout(() => {
+//         loader_page.removeAttribute("style");
+//         $('#dasw-content').load('project/');
+//     }, 2000);
+// })
+
+// $('#services').click(function () {
+//     loader_page.style.transform = "translateX(0)";
+//     setTimeout(() => {
+//         loader_page.removeAttribute("style");
+//         $('#dasw-content').load('services/');
+//     }, 2000);
+// })
+
+// $('#dasw-content').load('home.html');
+
+
 // PROJECT LIST MODAL BUTTON EVENT HANDLER
 // ----------------------------------------------------------------------------------
 
